@@ -1,5 +1,5 @@
 
-import { Component, useCallback, useMemo, useState, useEffect } from 'react';
+import { Component, useCallback, useMemo, useRef, useState, useEffect } from 'react';
 
 // Modell-/Regellogik (Entscheidungsbaum + Katalog + Helper):
 // - decisionTree: Fragen-/Leaf-Knoten inkl. next-Verweisen und ausgelösten Pflichtenpaketen
@@ -8,12 +8,23 @@ import { Component, useCallback, useMemo, useState, useEffect } from 'react';
 // - validateNextNode: zentrale Gate-/Lock-Logik (Review, Konsistenz, Sonderpfade)
 // - getCanonicalIdForRequirementInstance: Deduplizierung von Requirements über mehrere Leaves hinweg
 import {
+  MODEL_VERSION,
   getLocalizedModel,
   getRequirementChain,
   getNextInRequirementChain,
   validateNextNode,
   getCanonicalIdForRequirementInstance,
 } from './decisionTreeModel';
+import {
+  APP_VERSION,
+  buildAssessmentFileName,
+  createAssessmentId,
+  deleteAssessment,
+  listSavedAssessments,
+  normalizeAssessment,
+  saveAssessment,
+  validateImportedAssessment,
+} from './assessmentStorage';
 
 import { exportAssessmentPdf } from './pdfExport';
 import {
@@ -41,10 +52,11 @@ const uiCSS = `
   position:fixed;
   top:0; left:0; right:0;
   height:64px;
-  display:flex;
+  display:grid;
+  grid-template-columns:minmax(260px, 1fr) auto minmax(300px, 1fr);
   align-items:center;
-  justify-content:space-between;
-  padding:0 24px;
+  gap:16px;
+  padding:0 16px;
   background:#f9fafb;
   border-bottom:1px solid #e5e7eb;
   box-shadow:0 2px 6px rgba(15,23,42,0.04);
@@ -57,11 +69,21 @@ const uiCSS = `
   display:flex;
   align-items:center;
   gap:8px;
+  min-width:0;
 }
 
 .app-header-center{
-  flex:1;
   justify-content:center;
+  min-width:0;
+}
+
+.app-header-left{
+  justify-content:flex-start;
+  overflow:hidden;
+}
+
+.app-header-right{
+  justify-content:flex-end;
 }
 
 .app-model-badge{
@@ -71,6 +93,39 @@ const uiCSS = `
   background:#e5e7eb;
   font-size:11px;
   font-weight:500;
+  white-space:nowrap;
+  flex:0 0 auto;
+}
+
+.app-assessment-pill{
+  display:flex;
+  align-items:center;
+  gap:6px;
+  min-width:140px;
+  max-width:360px;
+  padding:6px 10px;
+  border-radius:10px;
+  border:1px solid #bae6fd;
+  background:#e0f2fe;
+  color:#0f172a;
+  box-shadow:0 1px 3px rgba(15,23,42,0.08);
+}
+
+.app-assessment-label{
+  font-size:10px;
+  font-weight:800;
+  text-transform:uppercase;
+  color:#0369a1;
+  white-space:nowrap;
+}
+
+.app-assessment-name{
+  min-width:0;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  font-size:14px;
+  font-weight:800;
 }
 
 .app-title{
@@ -78,15 +133,22 @@ const uiCSS = `
   font-weight:600;
   color:#111827;
   text-align:center;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  max-width:min(38vw, 520px);
 }
 
 .app-actions{
   display:flex;
   align-items:center;
   gap:8px;
+  min-width:0;
 }
 
-.app-actions button{
+.app-actions button,
+.app-menu-button,
+.app-menu-item{
   font-size:12px;
   padding:6px 12px;
   border-radius:999px;
@@ -96,14 +158,82 @@ const uiCSS = `
   cursor:pointer;
 }
 
-.app-actions button:hover{
+.app-actions button:hover,
+.app-menu-button:hover,
+.app-menu-item:hover{
   background:#f3f4f6;
 }
 
-.app-actions button:disabled{
+.app-actions button:disabled,
+.app-menu-item:disabled{
   background:#e5e7eb;
   color:#6b7280;
   cursor:not-allowed;
+}
+
+.app-meta-stack{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  min-width:0;
+  overflow:hidden;
+}
+
+.app-meta-truncate{
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  min-width:0;
+}
+
+.app-menu{
+  position:relative;
+  flex:0 0 auto;
+}
+
+.app-menu-panel{
+  position:absolute;
+  top:calc(100% + 8px);
+  right:0;
+  min-width:190px;
+  padding:6px;
+  border:1px solid #d1d5db;
+  border-radius:10px;
+  background:#ffffff;
+  box-shadow:0 16px 36px rgba(15,23,42,0.16);
+  z-index:2200;
+}
+
+.app-menu-item{
+  display:block;
+  width:100%;
+  border-radius:8px;
+  text-align:left;
+  white-space:nowrap;
+  border:1px solid transparent;
+  box-shadow:none;
+}
+
+@media (max-width: 1100px){
+  .app-header{
+    grid-template-columns:minmax(180px, 1fr) auto minmax(220px, 1fr);
+    gap:10px;
+    padding:0 10px;
+  }
+
+  .app-title{
+    max-width:28vw;
+    font-size:16px;
+  }
+
+  .app-header-left .rf-meta,
+  .app-header-right > .rf-meta{
+    display:none;
+  }
+
+  .app-assessment-pill{
+    max-width:240px;
+  }
 }
 
 
@@ -305,10 +435,190 @@ function LanguageSwitcher({ locale, onChange, t }) {
 }
 
 /**
+ * Rendert ein kompaktes Header-Menü für gruppierte Wizard-Aktionen.
+ */
+function HeaderActionMenu({ id, label, openMenu, setOpenMenu, items }) {
+  const isOpen = openMenu === id;
+
+  return (
+    <div className="app-menu">
+      <button
+        type="button"
+        className="app-menu-button"
+        onClick={() => setOpenMenu(isOpen ? null : id)}
+      >
+        {label}
+      </button>
+
+      {isOpen && (
+        <div className="app-menu-panel">
+          {items.map((item) => (
+            <button
+              key={item.key}
+              type="button"
+              className="app-menu-item"
+              onClick={() => {
+                setOpenMenu(null);
+                item.onClick?.();
+              }}
+              disabled={item.disabled}
+              title={item.title}
+            >
+              {item.label}
+            </button>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
+/**
+ * Zeigt lokal gespeicherte Assessments und erlaubt Laden/Löschen.
+ */
+function SavedAssessmentDialog({
+  assessments,
+  currentAssessmentId,
+  locale,
+  onClose,
+  onLoad,
+  onDelete,
+  t,
+}) {
+  return (
+    <div
+      role="dialog"
+      aria-modal="true"
+      style={{
+        position: 'fixed',
+        inset: 0,
+        zIndex: 2000,
+        background: 'rgba(15,23,42,0.45)',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        padding: 20,
+      }}
+      onClick={onClose}
+    >
+      <div
+        style={{
+          width: 'min(840px, 100%)',
+          maxHeight: '82vh',
+          overflow: 'auto',
+          background: '#ffffff',
+          borderRadius: 14,
+          border: '1px solid #e5e7eb',
+          boxShadow: '0 24px 60px rgba(15,23,42,0.25)',
+          padding: 18,
+        }}
+        onClick={(e) => e.stopPropagation()}
+      >
+        <div style={{ display: 'flex', justifyContent: 'space-between', gap: 12, marginBottom: 14 }}>
+          <div>
+            <div style={{ fontWeight: 800, fontSize: 16 }}>{t('persistence.managerTitle')}</div>
+            <div className="rf-meta">{t('persistence.managerDescription')}</div>
+          </div>
+          <button
+            type="button"
+            onClick={onClose}
+            style={{
+              padding: '6px 10px',
+              borderRadius: 10,
+              border: '1px solid #d1d5db',
+              background: '#ffffff',
+              cursor: 'pointer',
+              height: 'fit-content',
+            }}
+          >
+            {t('common.close')}
+          </button>
+        </div>
+
+        {assessments.length === 0 ? (
+          <div
+            style={{
+              padding: 14,
+              borderRadius: 10,
+              border: '1px solid #e5e7eb',
+              background: '#f9fafb',
+              fontSize: 13,
+            }}
+          >
+            {t('persistence.noSavedAssessments')}
+          </div>
+        ) : (
+          <div style={{ display: 'grid', gap: 10 }}>
+            {assessments.map((assessment) => (
+              <div
+                key={assessment.assessmentId}
+                style={{
+                  border: '1px solid #e5e7eb',
+                  borderRadius: 10,
+                  padding: 12,
+                  background: assessment.assessmentId === currentAssessmentId ? '#eff6ff' : '#ffffff',
+                }}
+              >
+                <div style={{ display: 'flex', justifyContent: 'space-between', gap: 12 }}>
+                  <div style={{ minWidth: 0 }}>
+                    <div style={{ fontWeight: 700, marginBottom: 4 }}>
+                      {assessment.title || t('persistence.untitled')}
+                    </div>
+                    <div className="rf-meta" style={{ display: 'flex', flexWrap: 'wrap', gap: 10 }}>
+                      <span>{t('persistence.creatorMeta', { value: assessment.createdBy || t('common.unknown') })}</span>
+                      <span>{t('persistence.updatedMeta', { value: new Date(assessment.updatedAt).toLocaleString(locale === 'en' ? 'en-US' : 'de-DE') })}</span>
+                      <span>{t('persistence.revisionMeta', { value: assessment.revision || 'v1.0' })}</span>
+                      <span>{t('persistence.localeMeta', { value: assessment.locale || '-' })}</span>
+                      <span>{t('persistence.modelMeta', { value: assessment.modelVersion || 'unknown' })}</span>
+                    </div>
+                  </div>
+
+                  <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', justifyContent: 'flex-end' }}>
+                    <button
+                      type="button"
+                      onClick={() => onLoad(assessment)}
+                      style={{
+                        padding: '6px 10px',
+                        borderRadius: 10,
+                        border: '1px solid #0ea5e9',
+                        background: '#e0f2fe',
+                        cursor: 'pointer',
+                        fontSize: 12,
+                        fontWeight: 600,
+                      }}
+                    >
+                      {t('persistence.load')}
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => onDelete(assessment.assessmentId)}
+                      style={{
+                        padding: '6px 10px',
+                        borderRadius: 10,
+                        border: '1px solid #fecaca',
+                        background: '#fff1f2',
+                        cursor: 'pointer',
+                        fontSize: 12,
+                      }}
+                    >
+                      {t('persistence.delete')}
+                    </button>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+
+/**
  * Startbildschirm: Kontext + Einstieg in den Wizard-Flow
  * Verantwortlich nur für UI und Übergang via onStart
  */
-function WelcomeScreen({ onStart, locale, onLocaleChange, t }) {
+function WelcomeScreen({ onStart, onLoad, onImport, locale, onLocaleChange, t }) {
   return (
     <div
       style={{
@@ -424,26 +734,62 @@ function WelcomeScreen({ onStart, locale, onLocaleChange, t }) {
           </div>
         </div>
 
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: 4 }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 10, marginTop: 4 }}>
           <div className="rf-meta">{t('welcome.auditTrail')}</div>
 
-          <button
-            type="button"
-            onClick={onStart}
-            style={{
-              padding: '8px 18px',
-              borderRadius: 999,
-              border: 'none',
-              background: '#0ea5e9',
-              color: '#0f172a',
-              fontWeight: 600,
-              fontSize: 13,
-              cursor: 'pointer',
-              boxShadow: '0 8px 18px rgba(56,189,248,0.45)',
-            }}
-          >
-            {t('welcome.start')}
-          </button>
+          <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', justifyContent: 'flex-end' }}>
+            <button
+              type="button"
+              onClick={onLoad}
+              style={{
+                padding: '8px 14px',
+                borderRadius: 999,
+                border: '1px solid #d1d5db',
+                background: '#ffffff',
+                color: '#0f172a',
+                fontWeight: 600,
+                fontSize: 13,
+                cursor: 'pointer',
+              }}
+            >
+              {t('welcome.load')}
+            </button>
+
+            <button
+              type="button"
+              onClick={onImport}
+              style={{
+                padding: '8px 14px',
+                borderRadius: 999,
+                border: '1px solid #d1d5db',
+                background: '#ffffff',
+                color: '#0f172a',
+                fontWeight: 600,
+                fontSize: 13,
+                cursor: 'pointer',
+              }}
+            >
+              {t('welcome.import')}
+            </button>
+
+            <button
+              type="button"
+              onClick={onStart}
+              style={{
+                padding: '8px 18px',
+                borderRadius: 999,
+                border: 'none',
+                background: '#0ea5e9',
+                color: '#0f172a',
+                fontWeight: 600,
+                fontSize: 13,
+                cursor: 'pointer',
+                boxShadow: '0 8px 18px rgba(56,189,248,0.45)',
+              }}
+            >
+              {t('welcome.start')}
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -454,8 +800,19 @@ function WelcomeScreen({ onStart, locale, onLocaleChange, t }) {
  * Erfasst den "Ersteller" (Name/Team) als Metadatum für Header und Export
  * Validierung ist bewusst minimal (nicht-leerer String), um den Flow nicht zu blockieren
  */
-function CreatorScreen({ value, onChange, onBack, onConfirm, locale, onLocaleChange, t }) {
-  const isValid = value.trim().length > 0;
+function CreatorScreen({
+  creator,
+  onCreatorChange,
+  title,
+  onTitleChange,
+  requireTitle,
+  onBack,
+  onConfirm,
+  locale,
+  onLocaleChange,
+  t,
+}) {
+  const isValid = creator.trim().length > 0 && (!requireTitle || title.trim().length > 0);
 
   return (
     <div
@@ -510,8 +867,8 @@ function CreatorScreen({ value, onChange, onBack, onConfirm, locale, onLocaleCha
         <input
           className="creator-input"
           type="text"
-          value={value}
-          onChange={(e) => onChange(e.target.value)}
+          value={creator}
+          onChange={(e) => onCreatorChange(e.target.value)}
           style={{
             width: "100%",
             padding: "8px 10px",
@@ -523,6 +880,52 @@ function CreatorScreen({ value, onChange, onBack, onConfirm, locale, onLocaleCha
             color: "#0f172a",
           }}
         />
+
+        {requireTitle ? (
+          <>
+            <label
+              className="creator-label"
+              style={{ display: "block", fontSize: 13, marginBottom: 6, color: "#0f172a" }}
+            >
+              {t('creator.assessmentTitleLabel')}
+            </label>
+
+            <input
+              className="creator-input"
+              type="text"
+              value={title}
+              onChange={(e) => onTitleChange(e.target.value)}
+              placeholder={t('creator.assessmentTitlePlaceholder')}
+              style={{
+                width: "100%",
+                padding: "8px 10px",
+                borderRadius: 8,
+                border: "1px solid #d1d5db",
+                fontSize: 13,
+                marginBottom: 18,
+                background: "#ffffff",
+                color: "#0f172a",
+              }}
+            />
+          </>
+        ) : (
+          <div
+            style={{
+              padding: '10px 12px',
+              borderRadius: 10,
+              border: '1px solid #e5e7eb',
+              background: '#f8fafc',
+              fontSize: 13,
+              color: '#334155',
+              marginBottom: 18,
+            }}
+          >
+            <div style={{ fontWeight: 700, marginBottom: 3 }}>
+              {t('creator.loadedAssessment')}
+            </div>
+            <div>{title || t('persistence.untitled')}</div>
+          </div>
+        )}
 
         <div
           style={{
@@ -671,6 +1074,38 @@ function setStoredBool(key, value) {
   } catch {
     return;
   }
+}
+
+/**
+ * Löst einen Browser-Download für JSON-Daten aus.
+ */
+function downloadJsonFile(fileName, data) {
+  const blob = new Blob([JSON.stringify(data, null, 2)], {
+    type: 'application/json',
+  });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement('a');
+  link.href = url;
+  link.download = fileName;
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
+  URL.revokeObjectURL(url);
+}
+
+/**
+ * Prüft, ob gespeicherte Pfad-IDs im aktuellen Modell noch existieren.
+ */
+function getMissingModelIds(assessment, decisionTree) {
+  const missing = [];
+
+  for (const step of assessment?.path ?? []) {
+    const id = step?.id;
+    if (!id || id.includes('__req__')) continue;
+    if (!decisionTree[id]) missing.push(id);
+  }
+
+  return missing;
 }
 
 /**
@@ -1571,14 +2006,31 @@ function validatePathConsistency({ answers, pathIds, activePath, decisionTree, t
  * - Requirement-Nodes werden sequenziell abgearbeitet; bereits beantwortete canonicalIds werden übersprungen;
  *   am Ende steht ein __req__summary-Step, der offene Requirements aggregiert und die Fortsetzung erlaubt
  */
-function Wizard({ createdBy, locale, onLocaleChange, t }) {
+function Wizard({
+  createdBy,
+  assessmentTitle,
+  locale,
+  onLocaleChange,
+  onAssessmentLoaded,
+  initialAssessment,
+  t,
+}) {
   const model = useMemo(() => getLocalizedModel(locale), [locale]);
   const { decisionTree, obligationsCatalog } = model;
 
+  const [assessmentId, setAssessmentId] = useState(() => createAssessmentId());
+  const [createdAt, setCreatedAt] = useState(() => new Date());
   const [path, setPath] = useState([{ id: 'A1' }]);
   const [answers, setAnswers] = useState({});
 
   const [isExporting, setIsExporting] = useState(false);
+  const [saveMessage, setSaveMessage] = useState('');
+  const [savedAssessments, setSavedAssessments] = useState(() => listSavedAssessments());
+  const [isManagerOpen, setIsManagerOpen] = useState(false);
+  const [openHeaderMenu, setOpenHeaderMenu] = useState(null);
+  const [importWarning, setImportWarning] = useState('');
+  const fileInputRef = useRef(null);
+  const appliedInitialAssessmentIdRef = useRef(null);
 
   const exportIncludePkgs = true;
 
@@ -1595,6 +2047,48 @@ function Wizard({ createdBy, locale, onLocaleChange, t }) {
   
   const [consistencyViolations, setConsistencyViolations] = useState([]);
   const [conflictHelpOpen, setConflictHelpOpen] = useState(false);
+
+  const refreshSavedAssessments = useCallback(() => {
+    setSavedAssessments(listSavedAssessments());
+  }, []);
+
+  const applyAssessment = useCallback((rawAssessment, { notifyParent = false } = {}) => {
+    const assessment = normalizeAssessment(rawAssessment);
+    const missingIds = getMissingModelIds(assessment, decisionTree);
+
+    setAssessmentId(assessment.assessmentId);
+    setCreatedAt(new Date(assessment.createdAt));
+    setPath(assessment.path.length ? assessment.path : [{ id: 'A1' }]);
+    setAnswers(assessment.answers);
+    setCurrentStepIndex(
+      Math.min(assessment.currentStepIndex, Math.max(0, assessment.path.length - 1))
+    );
+    setActivePathLength(
+      Math.min(
+        Math.max(assessment.activePathLength, 1),
+        Math.max(assessment.path.length, 1)
+      )
+    );
+    setUpdatedAt(new Date(assessment.updatedAt));
+    setAssessmentVersion(assessment.revision || 'v1.0');
+    window.localStorage.setItem('assessmentVersion', assessment.revision || 'v1.0');
+    setConsistencyViolations([]);
+    setConflictHelpOpen(false);
+    if (notifyParent) onAssessmentLoaded?.(assessment);
+
+    setImportWarning(
+      missingIds.length
+        ? t('persistence.missingIdsWarning', { ids: missingIds.join(', ') })
+        : ''
+    );
+  }, [decisionTree, onAssessmentLoaded, t]);
+
+  useEffect(() => {
+    if (!initialAssessment) return;
+    if (appliedInitialAssessmentIdRef.current === initialAssessment.assessmentId) return;
+    appliedInitialAssessmentIdRef.current = initialAssessment.assessmentId;
+    applyAssessment(initialAssessment);
+  }, [initialAssessment, applyAssessment]);
 
   const getAnswerText = useCallback((nodeId, value) => {
     if (!value) return '';
@@ -1999,6 +2493,92 @@ function Wizard({ createdBy, locale, onLocaleChange, t }) {
     setActivePathLength(1);
     setUpdatedAt(new Date());
   }, []);
+
+  const buildCurrentAssessment = useCallback((overrides = {}) => {
+    const now = new Date();
+
+    return normalizeAssessment({
+      assessmentId,
+      title: assessmentTitle || t('persistence.untitled'),
+      createdBy,
+      createdAt: createdAt.toISOString(),
+      updatedAt: now.toISOString(),
+      locale,
+      revision: assessmentVersion,
+      modelVersion: MODEL_VERSION,
+      appVersion: APP_VERSION,
+      path: path.slice(0, activePathLength),
+      answers,
+      currentStepIndex,
+      activePathLength,
+      ...overrides,
+    });
+  }, [
+    activePathLength,
+    answers,
+    assessmentId,
+    assessmentTitle,
+    assessmentVersion,
+    createdAt,
+    createdBy,
+    currentStepIndex,
+    locale,
+    path,
+    t,
+  ]);
+
+  const handleSaveAssessment = useCallback(() => {
+    const saved = saveAssessment(buildCurrentAssessment());
+    setAssessmentId(saved.assessmentId);
+    setUpdatedAt(new Date(saved.updatedAt));
+    refreshSavedAssessments();
+    setSaveMessage(t('persistence.savedMessage'));
+  }, [buildCurrentAssessment, refreshSavedAssessments, t]);
+
+  const handleExportJson = useCallback(() => {
+    const assessment = buildCurrentAssessment();
+    downloadJsonFile(buildAssessmentFileName(assessment), assessment);
+  }, [buildCurrentAssessment]);
+
+  const handleLoadAssessment = useCallback((assessment) => {
+    applyAssessment(assessment, { notifyParent: true });
+    setIsManagerOpen(false);
+  }, [applyAssessment]);
+
+  const handleDeleteAssessment = useCallback((assessmentIdToDelete) => {
+    if (!window.confirm(t('persistence.deleteConfirm'))) return;
+    deleteAssessment(assessmentIdToDelete);
+    refreshSavedAssessments();
+  }, [refreshSavedAssessments, t]);
+
+  const handleImportJsonFile = useCallback(async (event) => {
+    const file = event.target.files?.[0];
+    event.target.value = '';
+    if (!file) return;
+
+    try {
+      const text = await file.text();
+      const parsed = JSON.parse(text);
+      const validation = validateImportedAssessment(parsed);
+      if (!validation.ok) {
+        setImportWarning(validation.error);
+        return;
+      }
+
+      const imported = normalizeAssessment({
+        ...parsed,
+        assessmentId: parsed.assessmentId || createAssessmentId(),
+        updatedAt: new Date().toISOString(),
+      });
+
+      const saved = saveAssessment(imported);
+      refreshSavedAssessments();
+      applyAssessment(saved, { notifyParent: true });
+      setIsManagerOpen(false);
+    } catch (error) {
+      setImportWarning(`${t('persistence.importError')} ${error?.message ?? ''}`.trim());
+    }
+  }, [applyAssessment, refreshSavedAssessments, t]);
   
   const continueFromSummary = useCallback(
     (leafId) => {
@@ -2131,8 +2711,13 @@ function Wizard({ createdBy, locale, onLocaleChange, t }) {
 
     return {
       assessmentId: versionForExport,
+      savedAssessmentId: assessmentId,
+      title: assessmentTitle,
       createdBy,
+      createdAt: createdAt.toISOString(),
       lastUpdated: updatedAt.toISOString(),
+      modelVersion: MODEL_VERSION,
+      appVersion: APP_VERSION,
       path: pathPayload,
       missing,
       packagesByLeaf: exportIncludePkgs ? packagesByLeaf : null,
@@ -2140,6 +2725,9 @@ function Wizard({ createdBy, locale, onLocaleChange, t }) {
   }, [
     answers,
     activePathLength,
+    assessmentId,
+    assessmentTitle,
+    createdAt,
     createdBy,
     decisionTree,
     exportIncludePkgs,
@@ -2213,6 +2801,7 @@ function Wizard({ createdBy, locale, onLocaleChange, t }) {
         labels: {
           fileNamePrefix: t('pdf.fileNamePrefix'),
           metaVersion: t('pdf.metaVersion'),
+          metaModelVersion: t('pdf.metaModelVersion'),
           metaCreator: t('pdf.metaCreator'),
           metaUpdatedAt: t('pdf.metaUpdatedAt'),
           pathSection: t('pdf.pathSection'),
@@ -2352,6 +2941,58 @@ function Wizard({ createdBy, locale, onLocaleChange, t }) {
     );
   }
 
+  const assessmentMenuItems = [
+    {
+      key: 'save',
+      label: t('persistence.save'),
+      title: t('persistence.saveTitle'),
+      onClick: handleSaveAssessment,
+    },
+    {
+      key: 'load',
+      label: t('persistence.load'),
+      title: t('persistence.loadTitle'),
+      onClick: () => {
+        refreshSavedAssessments();
+        setIsManagerOpen(true);
+      },
+    },
+    {
+      key: 'resetVersion',
+      label: t('wizard.resetVersion'),
+      title: t('wizard.resetVersionTitle'),
+      onClick: resetAssessmentVersion,
+    },
+    {
+      key: 'resetPath',
+      label: t('wizard.resetPath'),
+      title: t('wizard.resetPathTitle'),
+      onClick: handleReset,
+    },
+  ];
+
+  const exportMenuItems = [
+    {
+      key: 'pdf',
+      label: isExporting ? t('wizard.exporting') : t('wizard.export'),
+      title: t('wizard.exportTitle'),
+      disabled: isExporting,
+      onClick: handleExportPDF,
+    },
+    {
+      key: 'jsonExport',
+      label: t('persistence.exportJson'),
+      title: t('persistence.exportJsonTitle'),
+      onClick: handleExportJson,
+    },
+    {
+      key: 'jsonImport',
+      label: t('persistence.importJson'),
+      title: t('persistence.importJsonTitle'),
+      onClick: () => fileInputRef.current?.click(),
+    },
+  ];
+
   // Rendering-Layout:
   // - Header: Metadaten + Export-Trigger + Reset 
   // - Sidebar: klickbare Historie (Pfad) zur Navigation
@@ -2363,9 +3004,17 @@ function Wizard({ createdBy, locale, onLocaleChange, t }) {
     >
   
       <header className="app-header">
-        <div className="app-header-left">
+        <div className="app-header-left app-meta-stack">
+          <div
+            className="app-assessment-pill"
+            title={t('persistence.assessmentTitle', { value: assessmentTitle || t('persistence.untitled') })}
+          >
+            <span className="app-assessment-label">{t('persistence.assessmentLabel')}</span>
+            <span className="app-assessment-name">{assessmentTitle || t('persistence.untitled')}</span>
+          </div>
           <span className="app-model-badge">{t('pdf.metaVersion')}: {assessmentVersion}</span>
-          <span className="rf-meta">{t('wizard.createdBy', { value: createdBy || t('common.unknown') })}</span>
+          <span className="app-model-badge">{t('persistence.modelVersion')}: {MODEL_VERSION}</span>
+          <span className="rf-meta app-meta-truncate">{t('wizard.createdBy', { value: createdBy || t('common.unknown') })}</span>
         </div>
 
         <div className="app-header-center">
@@ -2376,28 +3025,82 @@ function Wizard({ createdBy, locale, onLocaleChange, t }) {
           <LanguageSwitcher locale={locale} onChange={onLocaleChange} t={t} />
           <span className="rf-meta">{t('wizard.updatedAt', { value: updatedAtLabel })}</span>
 
-          <button
-            type="button"
-            onClick={handleExportPDF}
-            disabled={isExporting}
-            title={t('wizard.exportTitle')}
-          >
-            {isExporting ? t('wizard.exporting') : t('wizard.export')}
-          </button>
+          <HeaderActionMenu
+            id="assessment"
+            label={t('persistence.assessmentMenu')}
+            openMenu={openHeaderMenu}
+            setOpenMenu={setOpenHeaderMenu}
+            items={assessmentMenuItems}
+          />
 
-          <button
-            type="button"
-            onClick={resetAssessmentVersion}
-            title={t('wizard.resetVersionTitle')}
-          >
-            {t('wizard.resetVersion')}
-          </button>
+          <HeaderActionMenu
+            id="export"
+            label={t('persistence.exportMenu')}
+            openMenu={openHeaderMenu}
+            setOpenMenu={setOpenHeaderMenu}
+            items={exportMenuItems}
+          />
 
-          <button type="button" onClick={handleReset} title={t('wizard.resetPathTitle')}>
-            {t('wizard.resetPath')}
-          </button>
+          <input
+            ref={fileInputRef}
+            type="file"
+            accept="application/json,.json"
+            onChange={handleImportJsonFile}
+            style={{ display: 'none' }}
+          />
         </div>
       </header>
+
+      {(saveMessage || importWarning) && (
+        <div
+          style={{
+            position: 'fixed',
+            top: 72,
+            right: 24,
+            zIndex: 1200,
+            maxWidth: 420,
+            borderRadius: 10,
+            border: `1px solid ${importWarning ? '#fca5a5' : '#86efac'}`,
+            background: importWarning ? '#fef2f2' : '#f0fdf4',
+            color: '#111827',
+            padding: '10px 12px',
+            fontSize: 12,
+            boxShadow: '0 10px 24px rgba(15,23,42,0.12)',
+          }}
+        >
+          <div style={{ display: 'flex', gap: 10, alignItems: 'flex-start' }}>
+            <div style={{ flex: 1 }}>{importWarning || saveMessage}</div>
+            <button
+              type="button"
+              onClick={() => {
+                setSaveMessage('');
+                setImportWarning('');
+              }}
+              style={{
+                border: 'none',
+                background: 'transparent',
+                cursor: 'pointer',
+                fontSize: 12,
+                color: '#111827',
+              }}
+            >
+              {t('common.close')}
+            </button>
+          </div>
+        </div>
+      )}
+
+      {isManagerOpen && (
+        <SavedAssessmentDialog
+          assessments={savedAssessments}
+          currentAssessmentId={assessmentId}
+          locale={locale}
+          onClose={() => setIsManagerOpen(false)}
+          onLoad={handleLoadAssessment}
+          onDelete={handleDeleteAssessment}
+          t={t}
+        />
+      )}
 
       <div
         className="app-body"
@@ -2692,7 +3395,12 @@ function Wizard({ createdBy, locale, onLocaleChange, t }) {
 export default function App() {
   const [view, setView] = useState('welcome'); 
   const [creator, setCreator] = useState('');
+  const [assessmentTitle, setAssessmentTitle] = useState('');
+  const [loadedAssessment, setLoadedAssessment] = useState(null);
+  const [savedAssessments, setSavedAssessments] = useState(() => listSavedAssessments());
+  const [isWelcomeManagerOpen, setIsWelcomeManagerOpen] = useState(false);
   const [locale, setLocale] = useState(() => getStoredLocale());
+  const welcomeFileInputRef = useRef(null);
   const t = useMemo(() => createTranslator(locale), [locale]);
 
   useEffect(() => {
@@ -2705,31 +3413,123 @@ export default function App() {
 
   const resetApp = useCallback(() => {
     setCreator('');
+    setAssessmentTitle('');
+    setLoadedAssessment(null);
     setView('welcome');
+  }, []);
+
+  const refreshWelcomeAssessments = useCallback(() => {
+    setSavedAssessments(listSavedAssessments());
+  }, []);
+
+  const prepareLoadedAssessment = useCallback((assessment) => {
+    const normalized = normalizeAssessment(assessment);
+    setCreator('');
+    setAssessmentTitle(normalized.title || '');
+    setLoadedAssessment(normalized);
+    setIsWelcomeManagerOpen(false);
+    setView('creator');
+  }, []);
+
+  const handleWelcomeDeleteAssessment = useCallback((assessmentId) => {
+    if (!window.confirm(t('persistence.deleteConfirm'))) return;
+    deleteAssessment(assessmentId);
+    refreshWelcomeAssessments();
+  }, [refreshWelcomeAssessments, t]);
+
+  const handleWelcomeImportJsonFile = useCallback(async (event) => {
+    const file = event.target.files?.[0];
+    event.target.value = '';
+    if (!file) return;
+
+    try {
+      const parsed = JSON.parse(await file.text());
+      const validation = validateImportedAssessment(parsed);
+      if (!validation.ok) {
+        window.alert(validation.error);
+        return;
+      }
+
+      const imported = normalizeAssessment({
+        ...parsed,
+        assessmentId: parsed.assessmentId || createAssessmentId(),
+        updatedAt: new Date().toISOString(),
+      });
+
+      const saved = saveAssessment(imported);
+      refreshWelcomeAssessments();
+      prepareLoadedAssessment(saved);
+    } catch (error) {
+      window.alert(`${t('persistence.importError')} ${error?.message ?? ''}`.trim());
+    }
+  }, [prepareLoadedAssessment, refreshWelcomeAssessments, t]);
+
+  const handleAssessmentLoaded = useCallback((assessment) => {
+    setCreator(assessment.createdBy || '');
+    setAssessmentTitle(assessment.title || '');
+    setLoadedAssessment(assessment);
+    setView('wizard');
   }, []);
 
   let content = null;
 
   if (view === 'welcome') {
     content = (
-      <WelcomeScreen
-        onStart={() => setView('creator')}
-        locale={locale}
-        onLocaleChange={setLocale}
-        t={t}
-      />
+      <>
+        <WelcomeScreen
+          onStart={() => {
+            setCreator('');
+            setAssessmentTitle('');
+            setLoadedAssessment(null);
+            setView('creator');
+          }}
+          onLoad={() => {
+            refreshWelcomeAssessments();
+            setIsWelcomeManagerOpen(true);
+          }}
+          onImport={() => welcomeFileInputRef.current?.click()}
+          locale={locale}
+          onLocaleChange={setLocale}
+          t={t}
+        />
+
+        <input
+          ref={welcomeFileInputRef}
+          type="file"
+          accept="application/json,.json"
+          onChange={handleWelcomeImportJsonFile}
+          style={{ display: 'none' }}
+        />
+
+        {isWelcomeManagerOpen && (
+          <SavedAssessmentDialog
+            assessments={savedAssessments}
+            currentAssessmentId={loadedAssessment?.assessmentId}
+            locale={locale}
+            onClose={() => setIsWelcomeManagerOpen(false)}
+            onLoad={prepareLoadedAssessment}
+            onDelete={handleWelcomeDeleteAssessment}
+            t={t}
+          />
+        )}
+      </>
     );
   } else if (view === 'creator') {
     content = (
       <CreatorScreen
-        value={creator}
-        onChange={setCreator}
+        creator={creator}
+        onCreatorChange={setCreator}
+        title={assessmentTitle}
+        onTitleChange={setAssessmentTitle}
+        requireTitle={!loadedAssessment}
         onBack={() => setView('welcome')}
         locale={locale}
         onLocaleChange={setLocale}
         t={t}
         onConfirm={() => {
-          if (creator.trim()) setView('wizard');
+          if (creator.trim() && (loadedAssessment || assessmentTitle.trim())) {
+            setView('wizard');
+          }
         }}
       />
     );
@@ -2747,8 +3547,11 @@ export default function App() {
       >
         <Wizard
           createdBy={creator || t('common.unknown')}
+          assessmentTitle={assessmentTitle || t('persistence.untitled')}
           locale={locale}
           onLocaleChange={setLocale}
+          initialAssessment={loadedAssessment}
+          onAssessmentLoaded={handleAssessmentLoaded}
           t={t}
         />
       </ErrorBoundary>

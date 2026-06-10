@@ -28,7 +28,9 @@ This is a decision-support prototype, not legal advice.
 - Deduplication of repeated requirements across paths.
 - Consistency checks for contradictory paths and governance locks.
 - German and English localization.
-- Local assessment metadata and revision versioning.
+- Local multi-assessment storage with title, creator, locale, timestamps, path, answers, active step, and revision metadata.
+- JSON export and import for transferring or resuming assessments across browser sessions.
+- Rule-model version metadata for linking saved assessments to the decision-tree version used.
 - PDF export with assessment metadata, decision path, and missing requirements grouped by regulation and article.
 
 ## Research Background
@@ -122,6 +124,7 @@ The PDF export includes:
 - assessment metadata;
 - creator or team name;
 - assessment revision;
+- rule-model version;
 - timestamp;
 - reconstructed decision path;
 - answers given during the walkthrough;
@@ -129,6 +132,12 @@ The PDF export includes:
 - responsibility columns for governance follow-up.
 
 The export is intended as a governance and audit handover artifact.
+
+## Persistence
+
+Assessments can be saved locally in the browser and loaded later from either the welcome screen or the wizard header. A saved assessment contains the assessment ID, use-case title, creator, creation and update timestamps, locale, revision, rule-model version, path, answers, current step, and active path length.
+
+Assessments can also be exported and imported as JSON files. This supports transfer between browsers or continued work across sessions without requiring a backend. Imports are available from the welcome screen and the wizard header. Imported assessments are checked for the expected structure and warned if saved path nodes no longer exist in the current rule model.
 
 ## Limitations
 

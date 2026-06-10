@@ -1,5 +1,7 @@
 import { DEFAULT_LOCALE, getModelMessages } from './i18n';
 
+export const MODEL_VERSION = 'model-v1.0';
+
 // Link-Lookups für Rechtsgrundlagen
 export const EU_AI_ACT_LINKS_DE = {
   ART_3:  'https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=OJ:L_202401689#art_3',

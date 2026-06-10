@@ -41,9 +41,12 @@ export async function exportAssessmentPdf({
 
   const metaLine = [
     `${labels.metaVersion || 'Version'}: ${normalizeText(payload?.assessmentId || '')}`,
+    payload?.modelVersion
+      ? `${labels.metaModelVersion || 'Regelmodell'}: ${normalizeText(payload.modelVersion)}`
+      : null,
     `${labels.metaCreator || 'Ersteller'}: ${normalizeText(payload?.createdBy || 'Unbekannt')}`,
     `${labels.metaUpdatedAt || 'Bearbeitungszeitpunkt'}: ${formatDate(payload?.lastUpdated, locale)}`,
-  ].join('  •  ');
+  ].filter(Boolean).join('  •  ');
 
   doc.text(metaLine, marginX, y);
   y += 18;
