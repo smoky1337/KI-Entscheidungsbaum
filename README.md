@@ -98,6 +98,14 @@ Run linting:
 npm run lint
 ```
 
+Generate decision tree diagrams:
+
+```bash
+npm run diagram
+```
+
+This writes localized SVG and PDF diagrams to `docs/`.
+
 ## Project Structure
 
 ```text
@@ -109,6 +117,11 @@ src/
   locales/
     de/                    German UI and model text
     en/                    English UI and model text
+scripts/
+  generateDecisionTreeDiagram.mjs
+docs/
+  decision-tree-de.svg/pdf
+  decision-tree-en.svg/pdf
 ```
 
 ## Assessment Flow

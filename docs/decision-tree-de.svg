@@ -1,0 +1,1077 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="13186" height="1596" viewBox="0 0 13186 1596">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#64748b"/></marker>
+<clipPath id="clip-A1"><rect x="58" y="74" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-A2"><rect x="568" y="246" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-A0"><rect x="568" y="74" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-A2_Y"><rect x="1078" y="418" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-A2_ROLLE"><rect x="1078" y="246" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-ENDE"><rect x="1078" y="74" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-A2_ROLLE_BEREITSTELLUNG"><rect x="1588" y="74" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-A2_ROLLE_BETRIEB_KONTROLLE"><rect x="1588" y="246" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-A2_ROLLE_WESENTLICHE_AENDERUNG"><rect x="2098" y="74" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-A2_ROLLE_BETREIBER_EINSATZZWECK"><rect x="2098" y="246" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-A2_ROLLE_BETREIBER_DATENVERANTWORTUNG"><rect x="2608" y="74" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-A2_ROLLE_SCOPE_UNSICHER"><rect x="2608" y="246" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-A2_ROLLE_KONFORMITAETSARTEFAKTE"><rect x="3118" y="74" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-A2_GPAI_UNSICHER"><rect x="3118" y="246" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-A2_ROLLE_SCOPE_ANBIETER"><rect x="3628" y="74" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-A2_ROLLE_SCOPE_BETREIBER"><rect x="3628" y="246" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-A2_GPAI_SCREENING_UNSICHER"><rect x="3628" y="418" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-A3_HR_ANHANG_III_DOMAENE_ANBIETER_FINANZ"><rect x="3628" y="590" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-A2_GPAI_ANBIETER"><rect x="4138" y="74" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-A2_GPAI_BETREIBER"><rect x="4138" y="246" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-A2_GPAI_SYSTEMRISIKO_UNSICHER"><rect x="4138" y="418" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-A3_HR_FIN_KREDIT_ANBIETER"><rect x="4138" y="762" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-A3_HR_ANHANG_III_DOMAENE_ANBIETER_SICHERHEITSBAUTEIL"><rect x="4138" y="590" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-A2_GPAI_SCREENING_ANBIETER"><rect x="4648" y="74" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-A2_GPAI_SCREENING_BETREIBER"><rect x="4648" y="246" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-A3_HR_ANHANG_III_DOMAENE_BETREIBER_FINANZ"><rect x="4648" y="418" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-A2_GPAI_SYSTEMRISIKO_Y_UNSICHER"><rect x="4648" y="590" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-A3_HR_ANBIETER"><rect x="4648" y="934" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-A3_HR_FIN_VERSICHERUNGS_ANBIETER"><rect x="4648" y="1106" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-A3_HR_ANHANG_III_DOMAENE_ANBIETER_BIOMETRIE"><rect x="4648" y="762" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-A2_GPAI_SYSTEMRISIKO_ANBIETER"><rect x="5158" y="74" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-A2_GPAI_SYSTEMRISIKO_BETREIBER"><rect x="5158" y="246" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-A3_HR_FIN_KREDIT_BETREIBER"><rect x="5158" y="590" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-A3_HR_ANHANG_III_DOMAENE_BETREIBER_SICHERHEITSBAUTEIL"><rect x="5158" y="418" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-D0"><rect x="5158" y="934" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-A3_ANBIETER"><rect x="5158" y="1106" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-A3_HR_ANHANG_III_DOMAENE_ANBIETER_KRIT_INFRA"><rect x="5158" y="762" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-A2_GPAI_SYSTEMRISIKO_Y_ANBIETER"><rect x="5668" y="74" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-A2_GPAI_SYSTEMRISIKO_Y_BETREIBER"><rect x="5668" y="246" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-A3_GRFA_TRIGGER_BETREIBER"><rect x="5668" y="762" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-A3_HR_FIN_VERSICHERUNGS_BETREIBER"><rect x="5668" y="934" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-A3_HR_BETREIBER"><rect x="5668" y="590" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-A3_HR_ANHANG_III_DOMAENE_BETREIBER_BIOMETRIE"><rect x="5668" y="418" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-D1_ART16_B4"><rect x="5668" y="1278" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-A3_KEIN_HR_PRUEFUNG"><rect x="5668" y="1450" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-A3_HR_ANHANG_III_DOMAENE_ANBIETER_BILDUNG_ARBEIT_DIENSTE"><rect x="5668" y="1106" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-A3_HR_BETREIBER_GRFA"><rect x="6178" y="246" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-A3_HR_BETREIBER_OHNE_GRFA"><rect x="6178" y="418" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-A3_BETREIBER"><rect x="6178" y="590" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-A3_HR_ANHANG_III_DOMAENE_BETREIBER_KRIT_INFRA"><rect x="6178" y="74" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-D1_ART16_Y_B4"><rect x="6178" y="934" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-D1_ART16_N_B4"><rect x="6178" y="762" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-A4_TRANSPARENZ_ANWENDBAR"><rect x="6178" y="1106" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-A3_HR_ANHANG_III_DOMAENE_BETREIBER_BILDUNG_ARBEIT_DIENSTE"><rect x="6688" y="74" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-B1"><rect x="6688" y="246" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-A4_KEIN_HR_MIT_TRANSPARENZPFLICHTEN"><rect x="6688" y="418" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-A4_KEIN_HR_NUR_GOVERNANCE_BASIS"><rect x="6688" y="590" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-B1_SCOPE_NACHWEIS"><rect x="7198" y="74" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-B3"><rect x="7198" y="246" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-B2"><rect x="7708" y="74" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-W_DORA_KRITISCHE_FUNKTION_SCOPE_UEBERPRUEFUNG"><rect x="7708" y="246" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-B3_N"><rect x="7708" y="418" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-B3_R"><rect x="7708" y="590" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-B2_H"><rect x="8218" y="246" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-B2_EFFECTIVE"><rect x="8218" y="74" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-B4"><rect x="8218" y="418" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-T1_TLPT_APPLIES"><rect x="8218" y="590" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-B2_COMPLIANCE"><rect x="8728" y="74" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-B4_GENAI_LLM_SERVICE"><rect x="8728" y="246" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-B6"><rect x="8728" y="418" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-T1_TLPT"><rect x="8728" y="590" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-B2_M_ENH"><rect x="9238" y="246" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-B2_M"><rect x="9238" y="74" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-W_DORA_GENAI_LLM_KONTROLLEN"><rect x="9238" y="590" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-B5"><rect x="9238" y="418" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-B7"><rect x="9238" y="762" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-B5_SUBSTITUIERBARKEIT"><rect x="9748" y="246" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-B5_KONZENTRATION"><rect x="9748" y="74" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-B7_S"><rect x="9748" y="590" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-B7_N"><rect x="9748" y="418" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-B5_C"><rect x="10258" y="246" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-B5_N"><rect x="10258" y="74" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-B7_RUECKFALL"><rect x="10258" y="418" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-B5_KRITIKALITAETS_UEBERPRUEFUNG"><rect x="10768" y="74" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-B7_RUECKFALL_OK"><rect x="10768" y="418" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-B7_RUECKFALL_LUECKE"><rect x="10768" y="246" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-W_DORA_DRITTANBIETER_UEBERPRUEFUNG"><rect x="11278" y="74" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-B8"><rect x="11278" y="246" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-B8_D"><rect x="11788" y="74" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-B8_S"><rect x="11788" y="246" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-C1_KOMMUNIKATION_BENOETIGT"><rect x="12298" y="74" width="320" height="76" rx="4"/></clipPath>
+<clipPath id="clip-W_DORA_KOMMUNIKATION_ERFORDERLICH"><rect x="12808" y="74" width="320" height="76" rx="4"/></clipPath></defs>
+<rect width="100%" height="100%" fill="#f8fafc"/>
+<text x="48" y="28" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#0f172a">Decision tree (de)</text>
+<path d="M 388 110 L 459.4 110 L 459.4 282 L 550 282" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="463.4" y="191" font-family="Arial, sans-serif" font-size="10" fill="#475569">yes</text>
+<path d="M 388 110 L 459.4 110 L 459.4 110 L 550 110" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="463.4" y="105" font-family="Arial, sans-serif" font-size="10" fill="#475569">no</text>
+<path d="M 898 110 L 969.4 110 L 969.4 110 L 1060 110" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="973.4" y="105" font-family="Arial, sans-serif" font-size="10" fill="#475569">next</text>
+<path d="M 898 282 L 969.4 282 L 969.4 454 L 1060 454" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="973.4" y="363" font-family="Arial, sans-serif" font-size="10" fill="#475569">yes</text>
+<path d="M 898 282 L 969.4 282 L 969.4 282 L 1060 282" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="973.4" y="277" font-family="Arial, sans-serif" font-size="10" fill="#475569">no</text>
+<path d="M 1408 282 L 1479.4 282 L 1479.4 110 L 1570 110" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="1483.4" y="191" font-family="Arial, sans-serif" font-size="10" fill="#475569">yes</text>
+<path d="M 1408 282 L 1479.4 282 L 1479.4 282 L 1570 282" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="1483.4" y="277" font-family="Arial, sans-serif" font-size="10" fill="#475569">no</text>
+<path d="M 1918 110 L 1989.4 110 L 1989.4 110 L 2080 110" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="1993.4" y="105" font-family="Arial, sans-serif" font-size="10" fill="#475569">yes</text>
+<path d="M 1918 110 L 1989.4 110 L 1989.4 110 L 2080 110" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="1993.4" y="105" font-family="Arial, sans-serif" font-size="10" fill="#475569">no</text>
+<path d="M 2428 110 L 2462 110 L 2462 41.8 L 1952 41.8 L 1952 282 L 1918 282" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="2466" y="37.8" font-family="Arial, sans-serif" font-size="10" fill="#475569">yes</text>
+<path d="M 2428 110 L 2462 110 L 2462 41.8 L 1952 41.8 L 1952 282 L 1918 282" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="2466" y="37.8" font-family="Arial, sans-serif" font-size="10" fill="#475569">no</text>
+<path d="M 1918 282 L 1989.4 282 L 1989.4 282 L 2080 282" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="1993.4" y="277" font-family="Arial, sans-serif" font-size="10" fill="#475569">yes</text>
+<path d="M 1918 282 L 1989.4 282 L 1989.4 282 L 2080 282" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="1993.4" y="277" font-family="Arial, sans-serif" font-size="10" fill="#475569">no</text>
+<path d="M 2428 282 L 2499.4 282 L 2499.4 110 L 2590 110" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="2503.4" y="191" font-family="Arial, sans-serif" font-size="10" fill="#475569">yes</text>
+<path d="M 2428 282 L 2499.4 282 L 2499.4 282 L 2590 282" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="2503.4" y="277" font-family="Arial, sans-serif" font-size="10" fill="#475569">no</text>
+<path d="M 2938 110 L 3009.4 110 L 3009.4 110 L 3100 110" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="3013.4" y="105" font-family="Arial, sans-serif" font-size="10" fill="#475569">yes</text>
+<path d="M 2938 110 L 2564 110 L 2564 282 L 2590 282" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="2568" y="191" font-family="Arial, sans-serif" font-size="10" fill="#475569">no</text>
+<path d="M 3448 110 L 3519.4 110 L 3519.4 110 L 3610 110" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="3523.4" y="105" font-family="Arial, sans-serif" font-size="10" fill="#475569">yes</text>
+<path d="M 3448 110 L 3519.4 110 L 3519.4 282 L 3610 282" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="3523.4" y="191" font-family="Arial, sans-serif" font-size="10" fill="#475569">no</text>
+<path d="M 3958 110 L 4029.4 110 L 4029.4 110 L 4120 110" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="4033.4" y="105" font-family="Arial, sans-serif" font-size="10" fill="#475569">next</text>
+<path d="M 3958 282 L 4029.4 282 L 4029.4 282 L 4120 282" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="4033.4" y="277" font-family="Arial, sans-serif" font-size="10" fill="#475569">next</text>
+<path d="M 2938 282 L 3009.4 282 L 3009.4 282 L 3100 282" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="3013.4" y="277" font-family="Arial, sans-serif" font-size="10" fill="#475569">next</text>
+<path d="M 4468 110 L 4539.4 110 L 4539.4 110 L 4630 110" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="4543.4" y="105" font-family="Arial, sans-serif" font-size="10" fill="#475569">yes</text>
+<path d="M 4468 110 L 4502 110 L 4502 41.8 L 3992 41.8 L 3992 626 L 3958 626" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="4506" y="37.8" font-family="Arial, sans-serif" font-size="10" fill="#475569">no</text>
+<path d="M 4978 110 L 5049.4 110 L 5049.4 110 L 5140 110" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="5053.4" y="105" font-family="Arial, sans-serif" font-size="10" fill="#475569">next</text>
+<path d="M 5488 110 L 5559.4 110 L 5559.4 110 L 5650 110" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="5563.4" y="105" font-family="Arial, sans-serif" font-size="10" fill="#475569">yes</text>
+<path d="M 5488 110 L 5522 110 L 5522 41.8 L 3992 41.8 L 3992 626 L 3958 626" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="5526" y="37.8" font-family="Arial, sans-serif" font-size="10" fill="#475569">no</text>
+<path d="M 5998 110 L 6032 110 L 6032 41.8 L 3992 41.8 L 3992 626 L 3958 626" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="6036" y="37.8" font-family="Arial, sans-serif" font-size="10" fill="#475569">next</text>
+<path d="M 4468 282 L 4539.4 282 L 4539.4 282 L 4630 282" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="4543.4" y="277" font-family="Arial, sans-serif" font-size="10" fill="#475569">yes</text>
+<path d="M 4468 282 L 4539.4 282 L 4539.4 454 L 4630 454" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="4543.4" y="363" font-family="Arial, sans-serif" font-size="10" fill="#475569">no</text>
+<path d="M 4978 282 L 5049.4 282 L 5049.4 282 L 5140 282" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="5053.4" y="277" font-family="Arial, sans-serif" font-size="10" fill="#475569">next</text>
+<path d="M 5488 282 L 5559.4 282 L 5559.4 282 L 5650 282" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="5563.4" y="277" font-family="Arial, sans-serif" font-size="10" fill="#475569">yes</text>
+<path d="M 5488 282 L 5522 282 L 5522 213.8 L 5012 213.8 L 5012 454 L 4978 454" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="5526" y="209.8" font-family="Arial, sans-serif" font-size="10" fill="#475569">no</text>
+<path d="M 5998 282 L 6032 282 L 6032 213.8 L 5012 213.8 L 5012 454 L 4978 454" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="6036" y="209.8" font-family="Arial, sans-serif" font-size="10" fill="#475569">next</text>
+<path d="M 3448 282 L 3519.4 282 L 3519.4 454 L 3610 454" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="3523.4" y="363" font-family="Arial, sans-serif" font-size="10" fill="#475569">yes</text>
+<path d="M 3448 282 L 3519.4 282 L 3519.4 626 L 3610 626" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="3523.4" y="449" font-family="Arial, sans-serif" font-size="10" fill="#475569">no</text>
+<path d="M 3958 454 L 4029.4 454 L 4029.4 454 L 4120 454" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="4033.4" y="449" font-family="Arial, sans-serif" font-size="10" fill="#475569">next</text>
+<path d="M 4468 454 L 4539.4 454 L 4539.4 626 L 4630 626" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="4543.4" y="535" font-family="Arial, sans-serif" font-size="10" fill="#475569">yes</text>
+<path d="M 4468 454 L 4502 454 L 4502 385.8 L 3992 385.8 L 3992 626 L 3958 626" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="4506" y="381.8" font-family="Arial, sans-serif" font-size="10" fill="#475569">no</text>
+<path d="M 4978 626 L 5012 626 L 5012 557.8 L 3992 557.8 L 3992 626 L 3958 626" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="5016" y="553.8" font-family="Arial, sans-serif" font-size="10" fill="#475569">next</text>
+<path d="M 3958 626 L 4029.4 626 L 4029.4 798 L 4120 798" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="4033.4" y="707" font-family="Arial, sans-serif" font-size="10" fill="#475569">yes</text>
+<path d="M 3958 626 L 4029.4 626 L 4029.4 626 L 4120 626" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="4033.4" y="621" font-family="Arial, sans-serif" font-size="10" fill="#475569">no</text>
+<path d="M 4468 626 L 4539.4 626 L 4539.4 970 L 4630 970" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="4543.4" y="793" font-family="Arial, sans-serif" font-size="10" fill="#475569">yes</text>
+<path d="M 4468 626 L 4539.4 626 L 4539.4 798 L 4630 798" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="4543.4" y="707" font-family="Arial, sans-serif" font-size="10" fill="#475569">no</text>
+<path d="M 4978 798 L 4604 798 L 4604 970 L 4630 970" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="4608" y="879" font-family="Arial, sans-serif" font-size="10" fill="#475569">yes</text>
+<path d="M 4978 798 L 5049.4 798 L 5049.4 798 L 5140 798" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="5053.4" y="793" font-family="Arial, sans-serif" font-size="10" fill="#475569">no</text>
+<path d="M 5488 798 L 5522 798 L 5522 729.8 L 5012 729.8 L 5012 970 L 4978 970" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="5526" y="725.8" font-family="Arial, sans-serif" font-size="10" fill="#475569">yes</text>
+<path d="M 5488 798 L 5559.4 798 L 5559.4 1142 L 5650 1142" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="5563.4" y="965" font-family="Arial, sans-serif" font-size="10" fill="#475569">no</text>
+<path d="M 5998 1142 L 6032 1142 L 6032 901.8 L 5012 901.8 L 5012 970 L 4978 970" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="6036" y="897.8" font-family="Arial, sans-serif" font-size="10" fill="#475569">yes</text>
+<path d="M 5998 1142 L 6032 1142 L 6032 1073.8 L 5522 1073.8 L 5522 1142 L 5488 1142" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="6036" y="1069.8" font-family="Arial, sans-serif" font-size="10" fill="#475569">no</text>
+<path d="M 4468 798 L 4539.4 798 L 4539.4 970 L 4630 970" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="4543.4" y="879" font-family="Arial, sans-serif" font-size="10" fill="#475569">yes</text>
+<path d="M 4468 798 L 4539.4 798 L 4539.4 1142 L 4630 1142" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="4543.4" y="965" font-family="Arial, sans-serif" font-size="10" fill="#475569">no</text>
+<path d="M 4978 1142 L 4604 1142 L 4604 970 L 4630 970" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="4608" y="1051" font-family="Arial, sans-serif" font-size="10" fill="#475569">yes</text>
+<path d="M 4978 1142 L 5049.4 1142 L 5049.4 1142 L 5140 1142" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="5053.4" y="1137" font-family="Arial, sans-serif" font-size="10" fill="#475569">no</text>
+<path d="M 5488 1142 L 5522 1142 L 5522 901.8 L 5012 901.8 L 5012 970 L 4978 970" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="5526" y="897.8" font-family="Arial, sans-serif" font-size="10" fill="#475569">yes</text>
+<path d="M 5488 1142 L 5559.4 1142 L 5559.4 1486 L 5650 1486" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="5563.4" y="1309" font-family="Arial, sans-serif" font-size="10" fill="#475569">no</text>
+<path d="M 4978 970 L 5049.4 970 L 5049.4 970 L 5140 970" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="5053.4" y="965" font-family="Arial, sans-serif" font-size="10" fill="#475569">next</text>
+<path d="M 4978 454 L 5049.4 454 L 5049.4 626 L 5140 626" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="5053.4" y="535" font-family="Arial, sans-serif" font-size="10" fill="#475569">yes</text>
+<path d="M 4978 454 L 5049.4 454 L 5049.4 454 L 5140 454" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="5053.4" y="449" font-family="Arial, sans-serif" font-size="10" fill="#475569">no</text>
+<path d="M 5488 454 L 5559.4 454 L 5559.4 626 L 5650 626" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="5563.4" y="535" font-family="Arial, sans-serif" font-size="10" fill="#475569">yes</text>
+<path d="M 5488 454 L 5559.4 454 L 5559.4 454 L 5650 454" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="5563.4" y="449" font-family="Arial, sans-serif" font-size="10" fill="#475569">no</text>
+<path d="M 5998 454 L 5624 454 L 5624 626 L 5650 626" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="5628" y="535" font-family="Arial, sans-serif" font-size="10" fill="#475569">yes</text>
+<path d="M 5998 454 L 6069.4 454 L 6069.4 110 L 6160 110" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="6073.4" y="277" font-family="Arial, sans-serif" font-size="10" fill="#475569">no</text>
+<path d="M 6508 110 L 6542 110 L 6542 41.8 L 6032 41.8 L 6032 626 L 5998 626" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="6546" y="37.8" font-family="Arial, sans-serif" font-size="10" fill="#475569">yes</text>
+<path d="M 6508 110 L 6579.4 110 L 6579.4 110 L 6670 110" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="6583.4" y="105" font-family="Arial, sans-serif" font-size="10" fill="#475569">no</text>
+<path d="M 7018 110 L 7052 110 L 7052 41.8 L 6032 41.8 L 6032 626 L 5998 626" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="7056" y="37.8" font-family="Arial, sans-serif" font-size="10" fill="#475569">yes</text>
+<path d="M 7018 110 L 7052 110 L 7052 41.8 L 6542 41.8 L 6542 626 L 6508 626" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="7056" y="37.8" font-family="Arial, sans-serif" font-size="10" fill="#475569">no</text>
+<path d="M 5488 626 L 5559.4 626 L 5559.4 798 L 5650 798" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="5563.4" y="707" font-family="Arial, sans-serif" font-size="10" fill="#475569">yes</text>
+<path d="M 5488 626 L 5559.4 626 L 5559.4 970 L 5650 970" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="5563.4" y="793" font-family="Arial, sans-serif" font-size="10" fill="#475569">no</text>
+<path d="M 5998 970 L 5624 970 L 5624 798 L 5650 798" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="5628" y="879" font-family="Arial, sans-serif" font-size="10" fill="#475569">yes</text>
+<path d="M 5998 970 L 6069.4 970 L 6069.4 626 L 6160 626" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="6073.4" y="793" font-family="Arial, sans-serif" font-size="10" fill="#475569">no</text>
+<path d="M 6508 626 L 6542 626 L 6542 557.8 L 6032 557.8 L 6032 798 L 5998 798" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="6546" y="553.8" font-family="Arial, sans-serif" font-size="10" fill="#475569">yes</text>
+<path d="M 6508 626 L 6542 626 L 6542 557.8 L 6032 557.8 L 6032 1486 L 5998 1486" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="6546" y="553.8" font-family="Arial, sans-serif" font-size="10" fill="#475569">no</text>
+<path d="M 5998 626 L 6032 626 L 6032 557.8 L 5522 557.8 L 5522 970 L 5488 970" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="6036" y="553.8" font-family="Arial, sans-serif" font-size="10" fill="#475569">next</text>
+<path d="M 5998 798 L 6069.4 798 L 6069.4 282 L 6160 282" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="6073.4" y="535" font-family="Arial, sans-serif" font-size="10" fill="#475569">yes</text>
+<path d="M 5998 798 L 6069.4 798 L 6069.4 454 L 6160 454" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="6073.4" y="621" font-family="Arial, sans-serif" font-size="10" fill="#475569">no</text>
+<path d="M 6508 282 L 6542 282 L 6542 213.8 L 5522 213.8 L 5522 970 L 5488 970" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="6546" y="209.8" font-family="Arial, sans-serif" font-size="10" fill="#475569">next</text>
+<path d="M 6508 454 L 6542 454 L 6542 385.8 L 5522 385.8 L 5522 970 L 5488 970" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="6546" y="381.8" font-family="Arial, sans-serif" font-size="10" fill="#475569">next</text>
+<path d="M 5998 1486 L 6069.4 1486 L 6069.4 1142 L 6160 1142" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="6073.4" y="1309" font-family="Arial, sans-serif" font-size="10" fill="#475569">yes</text>
+<path d="M 5998 1486 L 6069.4 1486 L 6069.4 1142 L 6160 1142" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="6073.4" y="1309" font-family="Arial, sans-serif" font-size="10" fill="#475569">no</text>
+<path d="M 6508 1142 L 6579.4 1142 L 6579.4 454 L 6670 454" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="6583.4" y="793" font-family="Arial, sans-serif" font-size="10" fill="#475569">yes</text>
+<path d="M 6508 1142 L 6579.4 1142 L 6579.4 626 L 6670 626" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="6583.4" y="879" font-family="Arial, sans-serif" font-size="10" fill="#475569">no</text>
+<path d="M 7018 454 L 7052 454 L 7052 385.8 L 5522 385.8 L 5522 970 L 5488 970" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="7056" y="381.8" font-family="Arial, sans-serif" font-size="10" fill="#475569">next</text>
+<path d="M 7018 626 L 7052 626 L 7052 557.8 L 5522 557.8 L 5522 970 L 5488 970" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="7056" y="553.8" font-family="Arial, sans-serif" font-size="10" fill="#475569">next</text>
+<path d="M 5488 970 L 5559.4 970 L 5559.4 1314 L 5650 1314" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="5563.4" y="1137" font-family="Arial, sans-serif" font-size="10" fill="#475569">yes</text>
+<path d="M 5488 970 L 5522 970 L 5522 41.8 L 1442 41.8 L 1442 110 L 1408 110" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="5526" y="37.8" font-family="Arial, sans-serif" font-size="10" fill="#475569">no</text>
+<path d="M 5998 1314 L 6069.4 1314 L 6069.4 970 L 6160 970" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="6073.4" y="1137" font-family="Arial, sans-serif" font-size="10" fill="#475569">yes</text>
+<path d="M 5998 1314 L 6069.4 1314 L 6069.4 798 L 6160 798" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="6073.4" y="1051" font-family="Arial, sans-serif" font-size="10" fill="#475569">no</text>
+<path d="M 6508 970 L 6579.4 970 L 6579.4 282 L 6670 282" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="6583.4" y="621" font-family="Arial, sans-serif" font-size="10" fill="#475569">next</text>
+<path d="M 6508 798 L 6579.4 798 L 6579.4 282 L 6670 282" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="6583.4" y="535" font-family="Arial, sans-serif" font-size="10" fill="#475569">next</text>
+<path d="M 7018 282 L 7089.4 282 L 7089.4 110 L 7180 110" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="7093.4" y="191" font-family="Arial, sans-serif" font-size="10" fill="#475569">yes</text>
+<path d="M 7018 282 L 7089.4 282 L 7089.4 282 L 7180 282" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="7093.4" y="277" font-family="Arial, sans-serif" font-size="10" fill="#475569">no</text>
+<path d="M 7528 110 L 7599.4 110 L 7599.4 110 L 7690 110" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="7603.4" y="105" font-family="Arial, sans-serif" font-size="10" fill="#475569">yes</text>
+<path d="M 7528 110 L 7599.4 110 L 7599.4 282 L 7690 282" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="7603.4" y="191" font-family="Arial, sans-serif" font-size="10" fill="#475569">no</text>
+<path d="M 8038 282 L 7664 282 L 7664 110 L 7690 110" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="7668" y="191" font-family="Arial, sans-serif" font-size="10" fill="#475569">next</text>
+<path d="M 8038 110 L 8109.4 110 L 8109.4 282 L 8200 282" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="8113.4" y="191" font-family="Arial, sans-serif" font-size="10" fill="#475569">yes</text>
+<path d="M 8038 110 L 8109.4 110 L 8109.4 110 L 8200 110" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="8113.4" y="105" font-family="Arial, sans-serif" font-size="10" fill="#475569">no</text>
+<path d="M 8548 282 L 8174 282 L 8174 626 L 8200 626" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="8178" y="449" font-family="Arial, sans-serif" font-size="10" fill="#475569">next</text>
+<path d="M 8548 110 L 8174 110 L 8174 282 L 8200 282" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="8178" y="191" font-family="Arial, sans-serif" font-size="10" fill="#475569">yes</text>
+<path d="M 8548 110 L 8619.4 110 L 8619.4 110 L 8710 110" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="8623.4" y="105" font-family="Arial, sans-serif" font-size="10" fill="#475569">no</text>
+<path d="M 9058 110 L 9129.4 110 L 9129.4 282 L 9220 282" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="9133.4" y="191" font-family="Arial, sans-serif" font-size="10" fill="#475569">yes</text>
+<path d="M 9058 110 L 9129.4 110 L 9129.4 110 L 9220 110" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="9133.4" y="105" font-family="Arial, sans-serif" font-size="10" fill="#475569">no</text>
+<path d="M 9568 110 L 9602 110 L 9602 41.8 L 8582 41.8 L 8582 454 L 8548 454" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="9606" y="37.8" font-family="Arial, sans-serif" font-size="10" fill="#475569">next</text>
+<path d="M 9568 282 L 9602 282 L 9602 213.8 L 8582 213.8 L 8582 454 L 8548 454" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="9606" y="209.8" font-family="Arial, sans-serif" font-size="10" fill="#475569">next</text>
+<path d="M 7528 282 L 7599.4 282 L 7599.4 454 L 7690 454" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="7603.4" y="363" font-family="Arial, sans-serif" font-size="10" fill="#475569">yes</text>
+<path d="M 7528 282 L 7599.4 282 L 7599.4 626 L 7690 626" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="7603.4" y="449" font-family="Arial, sans-serif" font-size="10" fill="#475569">no</text>
+<path d="M 8038 454 L 8109.4 454 L 8109.4 454 L 8200 454" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="8113.4" y="449" font-family="Arial, sans-serif" font-size="10" fill="#475569">next</text>
+<path d="M 8038 626 L 8109.4 626 L 8109.4 626 L 8200 626" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="8113.4" y="621" font-family="Arial, sans-serif" font-size="10" fill="#475569">next</text>
+<path d="M 8548 626 L 8619.4 626 L 8619.4 626 L 8710 626" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="8623.4" y="621" font-family="Arial, sans-serif" font-size="10" fill="#475569">yes</text>
+<path d="M 8548 626 L 8174 626 L 8174 454 L 8200 454" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="8178" y="535" font-family="Arial, sans-serif" font-size="10" fill="#475569">no</text>
+<path d="M 9058 626 L 9092 626 L 9092 385.8 L 8582 385.8 L 8582 454 L 8548 454" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="9096" y="381.8" font-family="Arial, sans-serif" font-size="10" fill="#475569">next</text>
+<path d="M 8548 454 L 8619.4 454 L 8619.4 282 L 8710 282" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="8623.4" y="363" font-family="Arial, sans-serif" font-size="10" fill="#475569">yes</text>
+<path d="M 8548 454 L 8619.4 454 L 8619.4 454 L 8710 454" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="8623.4" y="449" font-family="Arial, sans-serif" font-size="10" fill="#475569">no</text>
+<path d="M 9058 282 L 9129.4 282 L 9129.4 626 L 9220 626" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="9133.4" y="449" font-family="Arial, sans-serif" font-size="10" fill="#475569">yes</text>
+<path d="M 9058 282 L 9129.4 282 L 9129.4 454 L 9220 454" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="9133.4" y="363" font-family="Arial, sans-serif" font-size="10" fill="#475569">no</text>
+<path d="M 9568 626 L 9194 626 L 9194 454 L 9220 454" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="9198" y="535" font-family="Arial, sans-serif" font-size="10" fill="#475569">next</text>
+<path d="M 9568 454 L 9639.4 454 L 9639.4 282 L 9730 282" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="9643.4" y="363" font-family="Arial, sans-serif" font-size="10" fill="#475569">yes</text>
+<path d="M 9568 454 L 9639.4 454 L 9639.4 110 L 9730 110" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="9643.4" y="277" font-family="Arial, sans-serif" font-size="10" fill="#475569">no</text>
+<path d="M 10078 282 L 9704 282 L 9704 110 L 9730 110" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="9708" y="191" font-family="Arial, sans-serif" font-size="10" fill="#475569">yes</text>
+<path d="M 10078 282 L 10149.4 282 L 10149.4 282 L 10240 282" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="10153.4" y="277" font-family="Arial, sans-serif" font-size="10" fill="#475569">no</text>
+<path d="M 10078 110 L 10149.4 110 L 10149.4 282 L 10240 282" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="10153.4" y="191" font-family="Arial, sans-serif" font-size="10" fill="#475569">yes</text>
+<path d="M 10078 110 L 10149.4 110 L 10149.4 110 L 10240 110" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="10153.4" y="105" font-family="Arial, sans-serif" font-size="10" fill="#475569">no</text>
+<path d="M 10588 282 L 10659.4 282 L 10659.4 110 L 10750 110" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="10663.4" y="191" font-family="Arial, sans-serif" font-size="10" fill="#475569">next</text>
+<path d="M 10588 110 L 10659.4 110 L 10659.4 110 L 10750 110" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="10663.4" y="105" font-family="Arial, sans-serif" font-size="10" fill="#475569">next</text>
+<path d="M 11098 110 L 11132 110 L 11132 41.8 L 9602 41.8 L 9602 798 L 9568 798" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="11136" y="37.8" font-family="Arial, sans-serif" font-size="10" fill="#475569">yes</text>
+<path d="M 11098 110 L 11169.4 110 L 11169.4 110 L 11260 110" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="11173.4" y="105" font-family="Arial, sans-serif" font-size="10" fill="#475569">no</text>
+<path d="M 11608 110 L 11642 110 L 11642 41.8 L 9602 41.8 L 9602 798 L 9568 798" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="11646" y="37.8" font-family="Arial, sans-serif" font-size="10" fill="#475569">next</text>
+<path d="M 9058 454 L 9129.4 454 L 9129.4 798 L 9220 798" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="9133.4" y="621" font-family="Arial, sans-serif" font-size="10" fill="#475569">next</text>
+<path d="M 9568 798 L 9639.4 798 L 9639.4 626 L 9730 626" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="9643.4" y="707" font-family="Arial, sans-serif" font-size="10" fill="#475569">yes</text>
+<path d="M 9568 798 L 9639.4 798 L 9639.4 454 L 9730 454" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="9643.4" y="621" font-family="Arial, sans-serif" font-size="10" fill="#475569">no</text>
+<path d="M 10078 626 L 10149.4 626 L 10149.4 454 L 10240 454" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="10153.4" y="535" font-family="Arial, sans-serif" font-size="10" fill="#475569">next</text>
+<path d="M 10078 454 L 10149.4 454 L 10149.4 454 L 10240 454" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="10153.4" y="449" font-family="Arial, sans-serif" font-size="10" fill="#475569">next</text>
+<path d="M 10588 454 L 10659.4 454 L 10659.4 454 L 10750 454" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="10663.4" y="449" font-family="Arial, sans-serif" font-size="10" fill="#475569">yes</text>
+<path d="M 10588 454 L 10659.4 454 L 10659.4 282 L 10750 282" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="10663.4" y="363" font-family="Arial, sans-serif" font-size="10" fill="#475569">no</text>
+<path d="M 11098 454 L 11169.4 454 L 11169.4 282 L 11260 282" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="11173.4" y="363" font-family="Arial, sans-serif" font-size="10" fill="#475569">next</text>
+<path d="M 11098 282 L 11169.4 282 L 11169.4 282 L 11260 282" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="11173.4" y="277" font-family="Arial, sans-serif" font-size="10" fill="#475569">next</text>
+<path d="M 11608 282 L 11679.4 282 L 11679.4 110 L 11770 110" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="11683.4" y="191" font-family="Arial, sans-serif" font-size="10" fill="#475569">yes</text>
+<path d="M 11608 282 L 11679.4 282 L 11679.4 282 L 11770 282" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="11683.4" y="277" font-family="Arial, sans-serif" font-size="10" fill="#475569">no</text>
+<path d="M 12118 110 L 12189.4 110 L 12189.4 110 L 12280 110" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="12193.4" y="105" font-family="Arial, sans-serif" font-size="10" fill="#475569">next</text>
+<path d="M 12118 282 L 12189.4 282 L 12189.4 110 L 12280 110" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="12193.4" y="191" font-family="Arial, sans-serif" font-size="10" fill="#475569">next</text>
+<path d="M 12628 110 L 12699.4 110 L 12699.4 110 L 12790 110" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="12703.4" y="105" font-family="Arial, sans-serif" font-size="10" fill="#475569">yes</text>
+<path d="M 12628 110 L 12662 110 L 12662 41.8 L 1442 41.8 L 1442 110 L 1408 110" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="12666" y="37.8" font-family="Arial, sans-serif" font-size="10" fill="#475569">no</text>
+<path d="M 13138 110 L 13172 110 L 13172 41.8 L 1442 41.8 L 1442 110 L 1408 110" fill="none" stroke="#64748b" stroke-width="1.2" stroke-opacity="0.78" marker-end="url(#arrow)"/>
+<text x="13176" y="37.8" font-family="Arial, sans-serif" font-size="10" fill="#475569">next</text>
+<rect x="48" y="48" width="340" height="124" rx="10" fill="#ffffff" stroke="#94a3b8" stroke-width="1.6"/>
+<text x="60" y="66" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">A1 · question</text>
+<g clip-path="url(#clip-A1)">
+<text x="60" y="88" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Ist die vorgeschlagene Lösung ein</text>
+<text x="60" y="102" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">KI-System nach dem EU AI Act?</text>
+</g>
+<text x="60" y="162" font-family="Arial, sans-serif" font-size="9" fill="#64748b">EU AI Act (2024), Art. 3</text>
+<rect x="558" y="220" width="340" height="124" rx="10" fill="#ffffff" stroke="#94a3b8" stroke-width="1.6"/>
+<text x="570" y="238" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">A2 · question</text>
+<g clip-path="url(#clip-A2)">
+<text x="570" y="260" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Liegt eine potenziell verbotene Praxis</text>
+<text x="570" y="274" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">nach EU AI Act vor?</text>
+</g>
+<text x="570" y="334" font-family="Arial, sans-serif" font-size="9" fill="#64748b">EU AI Act (2024), Art. 5</text>
+<rect x="558" y="48" width="340" height="124" rx="10" fill="#ecfdf5" stroke="#22c55e" stroke-width="1.6"/>
+<text x="570" y="66" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#064e3b">A0 · leaf</text>
+<g clip-path="url(#clip-A0)">
+<text x="570" y="88" font-family="Arial, sans-serif" font-size="12" fill="#064e3b">Kein KI-System -&gt; EU AI Act nicht</text>
+<text x="570" y="102" font-family="Arial, sans-serif" font-size="12" fill="#064e3b">anwendbar.</text>
+</g>
+<text x="570" y="162" font-family="Arial, sans-serif" font-size="9" fill="#64748b">EU AI Act (2024), Art. 3</text>
+<rect x="1068" y="392" width="340" height="124" rx="10" fill="#ecfdf5" stroke="#22c55e" stroke-width="1.6"/>
+<text x="1080" y="410" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#064e3b">A2_Y · leaf</text>
+<g clip-path="url(#clip-A2_Y)">
+<text x="1080" y="432" font-family="Arial, sans-serif" font-size="12" fill="#064e3b">Verbotene Praxis -&gt; Nutzung untersagen</text>
+<text x="1080" y="446" font-family="Arial, sans-serif" font-size="12" fill="#064e3b">und Eskalation auslösen.</text>
+</g>
+<text x="1080" y="506" font-family="Arial, sans-serif" font-size="9" fill="#64748b">EU AI Act (2024), Art. 5</text>
+<rect x="1068" y="220" width="340" height="124" rx="10" fill="#ffffff" stroke="#94a3b8" stroke-width="1.6"/>
+<text x="1080" y="238" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">A2_ROLLE · question</text>
+<g clip-path="url(#clip-A2_ROLLE)">
+<text x="1080" y="260" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Sind Sie Betreiber oder Anbieter des zu</text>
+<text x="1080" y="274" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">integrierenden KI-Systems?</text>
+</g>
+<text x="1080" y="334" font-family="Arial, sans-serif" font-size="9" fill="#64748b">EU AI Act (2024), Art. 3</text>
+<rect x="1068" y="48" width="340" height="124" rx="10" fill="#ecfdf5" stroke="#22c55e" stroke-width="1.6"/>
+<text x="1080" y="66" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#064e3b">ENDE · leaf</text>
+<g clip-path="url(#clip-ENDE)">
+<text x="1080" y="88" font-family="Arial, sans-serif" font-size="12" fill="#064e3b">Analyse beendet.</text>
+</g>
+<rect x="1578" y="48" width="340" height="124" rx="10" fill="#ffffff" stroke="#94a3b8" stroke-width="1.6"/>
+<text x="1590" y="66" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">A2_ROLLE_BEREITSTELLUNG · question</text>
+<g clip-path="url(#clip-A2_ROLLE_BEREITSTELLUNG)">
+<text x="1590" y="88" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Stellen Sie das KI-System (oder eine</text>
+<text x="1590" y="102" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Variante unter ihrer Marke) Dritten</text>
+<text x="1590" y="116" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">bereit oder bringen es in Verkehr?</text>
+</g>
+<text x="1590" y="162" font-family="Arial, sans-serif" font-size="9" fill="#64748b">EU AI Act (2024)</text>
+<rect x="1578" y="220" width="340" height="124" rx="10" fill="#ffffff" stroke="#94a3b8" stroke-width="1.6"/>
+<text x="1590" y="238" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">A2_ROLLE_BETRIEB_KONTROLLE · question</text>
+<g clip-path="url(#clip-A2_ROLLE_BETRIEB_KONTROLLE)">
+<text x="1590" y="260" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Haben Sie die operative Kontrolle über</text>
+<text x="1590" y="274" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">die produktive KI-Komponente oder</text>
+<text x="1590" y="288" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">steuern Sie wesentliche</text>
+<text x="1590" y="302" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Betriebsparameter, unabhängig davon, wo</text>
+<text x="1590" y="316" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">sie gehostet wird?</text>
+</g>
+<text x="1590" y="334" font-family="Arial, sans-serif" font-size="9" fill="#64748b">EU AI Act (2024)</text>
+<rect x="2088" y="48" width="340" height="124" rx="10" fill="#ffffff" stroke="#94a3b8" stroke-width="1.6"/>
+<text x="2100" y="66" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">A2_ROLLE_WESENTLICHE_AENDERUNG · question</text>
+<g clip-path="url(#clip-A2_ROLLE_WESENTLICHE_AENDERUNG)">
+<text x="2100" y="88" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Nehmen Sie am Modell/System wesentliche</text>
+<text x="2100" y="102" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Änderungen vor, die über reine</text>
+<text x="2100" y="116" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Konfiguration hinausgehen?</text>
+</g>
+<text x="2100" y="162" font-family="Arial, sans-serif" font-size="9" fill="#64748b">EU AI Act (2024)</text>
+<rect x="2088" y="220" width="340" height="124" rx="10" fill="#ffffff" stroke="#94a3b8" stroke-width="1.6"/>
+<text x="2100" y="238" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">A2_ROLLE_BETREIBER_EINSATZZWECK · question</text>
+<g clip-path="url(#clip-A2_ROLLE_BETREIBER_EINSATZZWECK)">
+<text x="2100" y="260" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Nutzen Sie das KI-System für einen</text>
+<text x="2100" y="274" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">eigenen Geschäftsprozess und bestimmen</text>
+<text x="2100" y="288" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Sie Zweck und Einsatzkontext?</text>
+</g>
+<text x="2100" y="334" font-family="Arial, sans-serif" font-size="9" fill="#64748b">EU AI Act (2024)</text>
+<rect x="2598" y="48" width="340" height="124" rx="10" fill="#ffffff" stroke="#94a3b8" stroke-width="1.6"/>
+<text x="2610" y="66" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">A2_ROLLE_BETREIBER_DATENVERANTWORTUNG · question</text>
+<g clip-path="url(#clip-A2_ROLLE_BETREIBER_DATENVERANTWORTUNG)">
+<text x="2610" y="88" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Stellen Sie wesentliche Eingabedaten</text>
+<text x="2610" y="102" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">bereit und verantworten deren</text>
+<text x="2610" y="116" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Auswahl/Qualität?</text>
+</g>
+<text x="2610" y="162" font-family="Arial, sans-serif" font-size="9" fill="#64748b">EU AI Act (2024)</text>
+<rect x="2598" y="220" width="340" height="124" rx="10" fill="#ecfdf5" stroke="#22c55e" stroke-width="1.6"/>
+<text x="2610" y="238" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#064e3b">A2_ROLLE_SCOPE_UNSICHER · leaf</text>
+<g clip-path="url(#clip-A2_ROLLE_SCOPE_UNSICHER)">
+<text x="2610" y="260" font-family="Arial, sans-serif" font-size="12" fill="#064e3b">Rolle unklar (Unsicher)</text>
+</g>
+<text x="2610" y="334" font-family="Arial, sans-serif" font-size="9" fill="#64748b">EU AI Act (2024)</text>
+<rect x="3108" y="48" width="340" height="124" rx="10" fill="#ffffff" stroke="#94a3b8" stroke-width="1.6"/>
+<text x="3120" y="66" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">A2_ROLLE_KONFORMITAETSARTEFAKTE · question</text>
+<g clip-path="url(#clip-A2_ROLLE_KONFORMITAETSARTEFAKTE)">
+<text x="3120" y="88" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Liefern Sie selbst die wichtigsten</text>
+<text x="3120" y="102" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Nachweise und Unterlagen zur Konformität</text>
+<text x="3120" y="116" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">bzw. Sicherheit?</text>
+</g>
+<text x="3120" y="162" font-family="Arial, sans-serif" font-size="9" fill="#64748b">EU AI Act (2024)</text>
+<rect x="3108" y="220" width="340" height="124" rx="10" fill="#ffffff" stroke="#94a3b8" stroke-width="1.6"/>
+<text x="3120" y="238" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">A2_GPAI_UNSICHER · question</text>
+<g clip-path="url(#clip-A2_GPAI_UNSICHER)">
+<text x="3120" y="260" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Wird ein KI-Modell mit allgemeinem</text>
+<text x="3120" y="274" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Verwendungszweck (GPAI) genutzt?</text>
+</g>
+<text x="3120" y="334" font-family="Arial, sans-serif" font-size="9" fill="#64748b">EU AI Act (2024), Art. 51–52</text>
+<rect x="3618" y="48" width="340" height="124" rx="10" fill="#ecfdf5" stroke="#22c55e" stroke-width="1.6"/>
+<text x="3630" y="66" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#064e3b">A2_ROLLE_SCOPE_ANBIETER · leaf</text>
+<g clip-path="url(#clip-A2_ROLLE_SCOPE_ANBIETER)">
+<text x="3630" y="88" font-family="Arial, sans-serif" font-size="12" fill="#064e3b">Rollenempfehlung: Anbieter</text>
+</g>
+<text x="3630" y="162" font-family="Arial, sans-serif" font-size="9" fill="#64748b">EU AI Act (2024)</text>
+<rect x="3618" y="220" width="340" height="124" rx="10" fill="#ecfdf5" stroke="#22c55e" stroke-width="1.6"/>
+<text x="3630" y="238" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#064e3b">A2_ROLLE_SCOPE_BETREIBER · leaf</text>
+<g clip-path="url(#clip-A2_ROLLE_SCOPE_BETREIBER)">
+<text x="3630" y="260" font-family="Arial, sans-serif" font-size="12" fill="#064e3b">Rollenempfehlung: Betreiber</text>
+</g>
+<text x="3630" y="334" font-family="Arial, sans-serif" font-size="9" fill="#64748b">EU AI Act (2024) – Rollenklärung (intern)</text>
+<rect x="3618" y="392" width="340" height="124" rx="10" fill="#ecfdf5" stroke="#22c55e" stroke-width="1.6"/>
+<text x="3630" y="410" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#064e3b">A2_GPAI_SCREENING_UNSICHER · leaf</text>
+<g clip-path="url(#clip-A2_GPAI_SCREENING_UNSICHER)">
+<text x="3630" y="432" font-family="Arial, sans-serif" font-size="12" fill="#064e3b">GPAI erkannt -&gt; Screening &amp;</text>
+<text x="3630" y="446" font-family="Arial, sans-serif" font-size="12" fill="#064e3b">Lieferkettentransparenz prüfen</text>
+</g>
+<text x="3630" y="506" font-family="Arial, sans-serif" font-size="9" fill="#64748b">EU AI Act (2024), Art. 51–52</text>
+<rect x="3618" y="564" width="340" height="124" rx="10" fill="#ffffff" stroke="#94a3b8" stroke-width="1.6"/>
+<text x="3630" y="582" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">A3_HR_ANHANG_III_DOMAENE_ANBIETER_FINANZ · question</text>
+<g clip-path="url(#clip-A3_HR_ANHANG_III_DOMAENE_ANBIETER_FINANZ)">
+<text x="3630" y="604" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Trifft der Anhang-III-Bereich „Finanzen“</text>
+<text x="3630" y="618" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">zu?</text>
+</g>
+<text x="3630" y="678" font-family="Arial, sans-serif" font-size="9" fill="#64748b">EU AI Act (2024), Anhang III</text>
+<rect x="4128" y="48" width="340" height="124" rx="10" fill="#ffffff" stroke="#94a3b8" stroke-width="1.6"/>
+<text x="4140" y="66" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">A2_GPAI_ANBIETER · question</text>
+<g clip-path="url(#clip-A2_GPAI_ANBIETER)">
+<text x="4140" y="88" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Wird ein KI-Modell mit allgemeinem</text>
+<text x="4140" y="102" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Verwendungszweck (GPAI) genutzt?</text>
+</g>
+<text x="4140" y="162" font-family="Arial, sans-serif" font-size="9" fill="#64748b">EU AI Act (2024), Art. 51–52</text>
+<rect x="4128" y="220" width="340" height="124" rx="10" fill="#ffffff" stroke="#94a3b8" stroke-width="1.6"/>
+<text x="4140" y="238" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">A2_GPAI_BETREIBER · question</text>
+<g clip-path="url(#clip-A2_GPAI_BETREIBER)">
+<text x="4140" y="260" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Wird ein KI-Modell mit allgemeinem</text>
+<text x="4140" y="274" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Verwendungszweck (GPAI) genutzt?</text>
+</g>
+<text x="4140" y="334" font-family="Arial, sans-serif" font-size="9" fill="#64748b">EU AI Act (2024), Art. 51–52</text>
+<rect x="4128" y="392" width="340" height="124" rx="10" fill="#ffffff" stroke="#94a3b8" stroke-width="1.6"/>
+<text x="4140" y="410" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">A2_GPAI_SYSTEMRISIKO_UNSICHER · question</text>
+<g clip-path="url(#clip-A2_GPAI_SYSTEMRISIKO_UNSICHER)">
+<text x="4140" y="432" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Handelt es sich um ein GPAI mit</text>
+<text x="4140" y="446" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">systemischem Risiko?</text>
+</g>
+<text x="4140" y="506" font-family="Arial, sans-serif" font-size="9" fill="#64748b">EU AI Act (2024), Art. 55</text>
+<rect x="4128" y="736" width="340" height="124" rx="10" fill="#ffffff" stroke="#94a3b8" stroke-width="1.6"/>
+<text x="4140" y="754" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">A3_HR_FIN_KREDIT_ANBIETER · question</text>
+<g clip-path="url(#clip-A3_HR_FIN_KREDIT_ANBIETER)">
+<text x="4140" y="776" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Wird das KI-System bestimmungsgemäß für</text>
+<text x="4140" y="790" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Kreditwürdigkeitsprüfung/Bonitätsbewert-</text>
+<text x="4140" y="804" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">ung natürlicher Personen verwendet</text>
+<text x="4140" y="818" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">(außer reine Finanzbetrugserkennung)?</text>
+</g>
+<text x="4140" y="850" font-family="Arial, sans-serif" font-size="9" fill="#64748b">EU AI Act (2024), Anhang III</text>
+<rect x="4128" y="564" width="340" height="124" rx="10" fill="#ffffff" stroke="#94a3b8" stroke-width="1.6"/>
+<text x="4140" y="582" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">A3_HR_ANHANG_III_DOMAENE_ANBIETER_SICHERHEITSBAUTEIL · question</text>
+<g clip-path="url(#clip-A3_HR_ANHANG_III_DOMAENE_ANBIETER_SICHERHEITSBAUTEIL)">
+<text x="4140" y="604" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Ist das KI-System ein Sicherheitsbauteil</text>
+<text x="4140" y="618" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">oder Teil eines Produkts nach Art. 6?</text>
+</g>
+<text x="4140" y="678" font-family="Arial, sans-serif" font-size="9" fill="#64748b">EU AI Act (2024), Art. 6</text>
+<rect x="4638" y="48" width="340" height="124" rx="10" fill="#ecfdf5" stroke="#22c55e" stroke-width="1.6"/>
+<text x="4650" y="66" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#064e3b">A2_GPAI_SCREENING_ANBIETER · leaf</text>
+<g clip-path="url(#clip-A2_GPAI_SCREENING_ANBIETER)">
+<text x="4650" y="88" font-family="Arial, sans-serif" font-size="12" fill="#064e3b">GPAI erkannt -&gt; Screening &amp;</text>
+<text x="4650" y="102" font-family="Arial, sans-serif" font-size="12" fill="#064e3b">Lieferkettentransparenz prüfen</text>
+</g>
+<text x="4650" y="162" font-family="Arial, sans-serif" font-size="9" fill="#64748b">EU AI Act (2024), Art. 51–52</text>
+<rect x="4638" y="220" width="340" height="124" rx="10" fill="#ecfdf5" stroke="#22c55e" stroke-width="1.6"/>
+<text x="4650" y="238" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#064e3b">A2_GPAI_SCREENING_BETREIBER · leaf</text>
+<g clip-path="url(#clip-A2_GPAI_SCREENING_BETREIBER)">
+<text x="4650" y="260" font-family="Arial, sans-serif" font-size="12" fill="#064e3b">GPAI erkannt -&gt; Screening &amp;</text>
+<text x="4650" y="274" font-family="Arial, sans-serif" font-size="12" fill="#064e3b">Lieferkettentransparenz prüfen</text>
+</g>
+<text x="4650" y="334" font-family="Arial, sans-serif" font-size="9" fill="#64748b">EU AI Act (2024), Art. 51–52</text>
+<rect x="4638" y="392" width="340" height="124" rx="10" fill="#ffffff" stroke="#94a3b8" stroke-width="1.6"/>
+<text x="4650" y="410" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">A3_HR_ANHANG_III_DOMAENE_BETREIBER_FINANZ · question</text>
+<g clip-path="url(#clip-A3_HR_ANHANG_III_DOMAENE_BETREIBER_FINANZ)">
+<text x="4650" y="432" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Trifft der Anhang-III-Bereich „Finanzen“</text>
+<text x="4650" y="446" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">zu?</text>
+</g>
+<text x="4650" y="506" font-family="Arial, sans-serif" font-size="9" fill="#64748b">EU AI Act (2024), Anhang III</text>
+<rect x="4638" y="564" width="340" height="124" rx="10" fill="#ecfdf5" stroke="#22c55e" stroke-width="1.6"/>
+<text x="4650" y="582" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#064e3b">A2_GPAI_SYSTEMRISIKO_Y_UNSICHER · leaf</text>
+<g clip-path="url(#clip-A2_GPAI_SYSTEMRISIKO_Y_UNSICHER)">
+<text x="4650" y="604" font-family="Arial, sans-serif" font-size="12" fill="#064e3b">GPAI mit systemischem Risiko -&gt;</text>
+<text x="4650" y="618" font-family="Arial, sans-serif" font-size="12" fill="#064e3b">zusätzliche Pflichten</text>
+</g>
+<text x="4650" y="678" font-family="Arial, sans-serif" font-size="9" fill="#64748b">EU AI Act (2024), Art. 55</text>
+<rect x="4638" y="908" width="340" height="124" rx="10" fill="#ecfdf5" stroke="#22c55e" stroke-width="1.6"/>
+<text x="4650" y="926" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#064e3b">A3_HR_ANBIETER · leaf</text>
+<g clip-path="url(#clip-A3_HR_ANBIETER)">
+<text x="4650" y="948" font-family="Arial, sans-serif" font-size="12" fill="#064e3b">Hochrisiko-KI -&gt; Hochrisiko-Pflichten</text>
+<text x="4650" y="962" font-family="Arial, sans-serif" font-size="12" fill="#064e3b">anwenden.</text>
+</g>
+<text x="4650" y="1022" font-family="Arial, sans-serif" font-size="9" fill="#64748b">EU AI Act (2024), Art. 6</text>
+<rect x="4638" y="1080" width="340" height="124" rx="10" fill="#ffffff" stroke="#94a3b8" stroke-width="1.6"/>
+<text x="4650" y="1098" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">A3_HR_FIN_VERSICHERUNGS_ANBIETER · question</text>
+<g clip-path="url(#clip-A3_HR_FIN_VERSICHERUNGS_ANBIETER)">
+<text x="4650" y="1120" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Wird das KI-System bestimmungsgemäß für</text>
+<text x="4650" y="1134" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Risikobewertung und Preisbildung bei</text>
+<text x="4650" y="1148" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Lebens-/Krankenversicherung natürlicher</text>
+<text x="4650" y="1162" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Personen verwendet?</text>
+</g>
+<text x="4650" y="1194" font-family="Arial, sans-serif" font-size="9" fill="#64748b">EU AI Act (2024), Anhang III</text>
+<rect x="4638" y="736" width="340" height="124" rx="10" fill="#ffffff" stroke="#94a3b8" stroke-width="1.6"/>
+<text x="4650" y="754" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">A3_HR_ANHANG_III_DOMAENE_ANBIETER_BIOMETRIE · question</text>
+<g clip-path="url(#clip-A3_HR_ANHANG_III_DOMAENE_ANBIETER_BIOMETRIE)">
+<text x="4650" y="776" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Trifft der Anhang-III-Bereich</text>
+<text x="4650" y="790" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">„Biometrie“ zu?</text>
+</g>
+<text x="4650" y="850" font-family="Arial, sans-serif" font-size="9" fill="#64748b">EU AI Act (2024), Anhang III</text>
+<rect x="5148" y="48" width="340" height="124" rx="10" fill="#ffffff" stroke="#94a3b8" stroke-width="1.6"/>
+<text x="5160" y="66" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">A2_GPAI_SYSTEMRISIKO_ANBIETER · question</text>
+<g clip-path="url(#clip-A2_GPAI_SYSTEMRISIKO_ANBIETER)">
+<text x="5160" y="88" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Handelt es sich um ein GPAI mit</text>
+<text x="5160" y="102" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">systemischem Risiko?</text>
+</g>
+<text x="5160" y="162" font-family="Arial, sans-serif" font-size="9" fill="#64748b">EU AI Act (2024), Art. 55</text>
+<rect x="5148" y="220" width="340" height="124" rx="10" fill="#ffffff" stroke="#94a3b8" stroke-width="1.6"/>
+<text x="5160" y="238" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">A2_GPAI_SYSTEMRISIKO_BETREIBER · question</text>
+<g clip-path="url(#clip-A2_GPAI_SYSTEMRISIKO_BETREIBER)">
+<text x="5160" y="260" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Handelt es sich um ein GPAI mit</text>
+<text x="5160" y="274" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">systemischem Risiko?</text>
+</g>
+<text x="5160" y="334" font-family="Arial, sans-serif" font-size="9" fill="#64748b">EU AI Act (2024), Art. 55</text>
+<rect x="5148" y="564" width="340" height="124" rx="10" fill="#ffffff" stroke="#94a3b8" stroke-width="1.6"/>
+<text x="5160" y="582" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">A3_HR_FIN_KREDIT_BETREIBER · question</text>
+<g clip-path="url(#clip-A3_HR_FIN_KREDIT_BETREIBER)">
+<text x="5160" y="604" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Wird das KI-System bestimmungsgemäß für</text>
+<text x="5160" y="618" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Kreditwürdigkeitsprüfung/Bonitätsbewert-</text>
+<text x="5160" y="632" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">ung natürlicher Personen verwendet</text>
+<text x="5160" y="646" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">(außer reine Finanzbetrugserkennung)?</text>
+</g>
+<text x="5160" y="678" font-family="Arial, sans-serif" font-size="9" fill="#64748b">EU AI Act (2024), Anhang III</text>
+<rect x="5148" y="392" width="340" height="124" rx="10" fill="#ffffff" stroke="#94a3b8" stroke-width="1.6"/>
+<text x="5160" y="410" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">A3_HR_ANHANG_III_DOMAENE_BETREIBER_SICHERHEITSBAUTEIL · question</text>
+<g clip-path="url(#clip-A3_HR_ANHANG_III_DOMAENE_BETREIBER_SICHERHEITSBAUTEIL)">
+<text x="5160" y="432" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Ist das KI-System ein Sicherheitsbauteil</text>
+<text x="5160" y="446" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">oder Teil eines Produkts nach Art. 6?</text>
+</g>
+<text x="5160" y="506" font-family="Arial, sans-serif" font-size="9" fill="#64748b">EU AI Act (2024), Art. 6</text>
+<rect x="5148" y="908" width="340" height="124" rx="10" fill="#eff6ff" stroke="#38bdf8" stroke-width="1.6"/>
+<text x="5160" y="926" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">D0 · question</text>
+<g clip-path="url(#clip-D0)">
+<text x="5160" y="948" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Fällt Ihr Unternehmen unter DORA?</text>
+</g>
+<text x="5160" y="1022" font-family="Arial, sans-serif" font-size="9" fill="#64748b">DORA (2022), Art. 2</text>
+<rect x="5148" y="1080" width="340" height="124" rx="10" fill="#ffffff" stroke="#94a3b8" stroke-width="1.6"/>
+<text x="5160" y="1098" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">A3_ANBIETER · question</text>
+<g clip-path="url(#clip-A3_ANBIETER)">
+<text x="5160" y="1120" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Keiner der vorherigen</text>
+<text x="5160" y="1134" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Anhang-III/Art.-6-Auslöser hat eindeutig</text>
+<text x="5160" y="1148" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">gegriffen: Liegt trotzdem ein</text>
+<text x="5160" y="1162" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Hochrisiko-Fall vor, der dokumentiert</text>
+<text x="5160" y="1176" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">werden muss?</text>
+</g>
+<text x="5160" y="1194" font-family="Arial, sans-serif" font-size="9" fill="#64748b">EU AI Act (2024), Art. 6</text>
+<rect x="5148" y="736" width="340" height="124" rx="10" fill="#ffffff" stroke="#94a3b8" stroke-width="1.6"/>
+<text x="5160" y="754" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">A3_HR_ANHANG_III_DOMAENE_ANBIETER_KRIT_INFRA · question</text>
+<g clip-path="url(#clip-A3_HR_ANHANG_III_DOMAENE_ANBIETER_KRIT_INFRA)">
+<text x="5160" y="776" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Trifft der Anhang-III-Bereich „Kritische</text>
+<text x="5160" y="790" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Infrastruktur“ zu?</text>
+</g>
+<text x="5160" y="850" font-family="Arial, sans-serif" font-size="9" fill="#64748b">EU AI Act (2024), Anhang III</text>
+<rect x="5658" y="48" width="340" height="124" rx="10" fill="#ecfdf5" stroke="#22c55e" stroke-width="1.6"/>
+<text x="5670" y="66" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#064e3b">A2_GPAI_SYSTEMRISIKO_Y_ANBIETER · leaf</text>
+<g clip-path="url(#clip-A2_GPAI_SYSTEMRISIKO_Y_ANBIETER)">
+<text x="5670" y="88" font-family="Arial, sans-serif" font-size="12" fill="#064e3b">GPAI mit systemischem Risiko -&gt;</text>
+<text x="5670" y="102" font-family="Arial, sans-serif" font-size="12" fill="#064e3b">zusätzliche Pflichten</text>
+</g>
+<text x="5670" y="162" font-family="Arial, sans-serif" font-size="9" fill="#64748b">EU AI Act (2024), Art. 55</text>
+<rect x="5658" y="220" width="340" height="124" rx="10" fill="#ecfdf5" stroke="#22c55e" stroke-width="1.6"/>
+<text x="5670" y="238" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#064e3b">A2_GPAI_SYSTEMRISIKO_Y_BETREIBER · leaf</text>
+<g clip-path="url(#clip-A2_GPAI_SYSTEMRISIKO_Y_BETREIBER)">
+<text x="5670" y="260" font-family="Arial, sans-serif" font-size="12" fill="#064e3b">GPAI mit systemischem Risiko -&gt;</text>
+<text x="5670" y="274" font-family="Arial, sans-serif" font-size="12" fill="#064e3b">zusätzliche Pflichten (Art. 55)</text>
+</g>
+<text x="5670" y="334" font-family="Arial, sans-serif" font-size="9" fill="#64748b">EU AI Act (2024), Art. 55</text>
+<rect x="5658" y="736" width="340" height="124" rx="10" fill="#ffffff" stroke="#94a3b8" stroke-width="1.6"/>
+<text x="5670" y="754" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">A3_GRFA_TRIGGER_BETREIBER · question</text>
+<g clip-path="url(#clip-A3_GRFA_TRIGGER_BETREIBER)">
+<text x="5670" y="776" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Ist für diesen Hochrisiko Anwendungsfall</text>
+<text x="5670" y="790" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">eine Grundrechts-Folgenabschätzung</text>
+<text x="5670" y="804" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">(GRFA) nach Art. 27 erforderlich?</text>
+</g>
+<text x="5670" y="850" font-family="Arial, sans-serif" font-size="9" fill="#64748b">EU AI Act (2024), Art. 27</text>
+<rect x="5658" y="908" width="340" height="124" rx="10" fill="#ffffff" stroke="#94a3b8" stroke-width="1.6"/>
+<text x="5670" y="926" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">A3_HR_FIN_VERSICHERUNGS_BETREIBER · question</text>
+<g clip-path="url(#clip-A3_HR_FIN_VERSICHERUNGS_BETREIBER)">
+<text x="5670" y="948" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Wird das KI-System bestimmungsgemäß für</text>
+<text x="5670" y="962" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Risikobewertung und Preisbildung bei</text>
+<text x="5670" y="976" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Lebens-/Krankenversicherung natürlicher</text>
+<text x="5670" y="990" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Personen verwendet?</text>
+</g>
+<text x="5670" y="1022" font-family="Arial, sans-serif" font-size="9" fill="#64748b">EU AI Act (2024), Anhang III</text>
+<rect x="5658" y="564" width="340" height="124" rx="10" fill="#ecfdf5" stroke="#22c55e" stroke-width="1.6"/>
+<text x="5670" y="582" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#064e3b">A3_HR_BETREIBER · leaf</text>
+<g clip-path="url(#clip-A3_HR_BETREIBER)">
+<text x="5670" y="604" font-family="Arial, sans-serif" font-size="12" fill="#064e3b">Hochrisiko-KI -&gt; Hochrisiko-Pflichten</text>
+<text x="5670" y="618" font-family="Arial, sans-serif" font-size="12" fill="#064e3b">anwenden.</text>
+</g>
+<text x="5670" y="678" font-family="Arial, sans-serif" font-size="9" fill="#64748b">EU AI Act (2024), Art. 6</text>
+<rect x="5658" y="392" width="340" height="124" rx="10" fill="#ffffff" stroke="#94a3b8" stroke-width="1.6"/>
+<text x="5670" y="410" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">A3_HR_ANHANG_III_DOMAENE_BETREIBER_BIOMETRIE · question</text>
+<g clip-path="url(#clip-A3_HR_ANHANG_III_DOMAENE_BETREIBER_BIOMETRIE)">
+<text x="5670" y="432" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Trifft der Anhang-III-Bereich</text>
+<text x="5670" y="446" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">„Biometrie“ zu?</text>
+</g>
+<text x="5670" y="506" font-family="Arial, sans-serif" font-size="9" fill="#64748b">EU AI Act (2024), Anhang III</text>
+<rect x="5658" y="1252" width="340" height="124" rx="10" fill="#eff6ff" stroke="#38bdf8" stroke-width="1.6"/>
+<text x="5670" y="1270" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">D1_ART16_B4 · question</text>
+<g clip-path="url(#clip-D1_ART16_B4)">
+<text x="5670" y="1292" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Darf für Ihr Unternehmen ein</text>
+<text x="5670" y="1306" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">vereinfachter IKT-Risikomanagementrahmen</text>
+<text x="5670" y="1320" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">nach Art. 16 angewendet werden?</text>
+</g>
+<text x="5670" y="1366" font-family="Arial, sans-serif" font-size="9" fill="#64748b">DORA (2022), Art. 16</text>
+<rect x="5658" y="1424" width="340" height="124" rx="10" fill="#ffffff" stroke="#94a3b8" stroke-width="1.6"/>
+<text x="5670" y="1442" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">A3_KEIN_HR_PRUEFUNG · question</text>
+<g clip-path="url(#clip-A3_KEIN_HR_PRUEFUNG)">
+<text x="5670" y="1464" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Kein Hochrisiko festgestellt: Ist die</text>
+<text x="5670" y="1478" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Einstufung nachvollziehbar in einem</text>
+<text x="5670" y="1492" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">entsprechenden Dokument begründet?</text>
+</g>
+<text x="5670" y="1538" font-family="Arial, sans-serif" font-size="9" fill="#64748b">EU AI Act (2024), Art. 6</text>
+<rect x="5658" y="1080" width="340" height="124" rx="10" fill="#ffffff" stroke="#94a3b8" stroke-width="1.6"/>
+<text x="5670" y="1098" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">A3_HR_ANHANG_III_DOMAENE_ANBIETER_BILDUNG_ARBEIT_DIENSTE · question</text>
+<g clip-path="url(#clip-A3_HR_ANHANG_III_DOMAENE_ANBIETER_BILDUNG_ARBEIT_DIENSTE)">
+<text x="5670" y="1120" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Trifft einer der Anhang-III-Bereiche zu:</text>
+<text x="5670" y="1134" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Bildung,</text>
+<text x="5670" y="1148" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Beschäftigung/Personalmanagement oder</text>
+<text x="5670" y="1162" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Zugang zu wesentlichen Dienstleistungen?</text>
+</g>
+<text x="5670" y="1194" font-family="Arial, sans-serif" font-size="9" fill="#64748b">EU AI Act (2024), Anhang III</text>
+<rect x="6168" y="220" width="340" height="124" rx="10" fill="#ecfdf5" stroke="#22c55e" stroke-width="1.6"/>
+<text x="6180" y="238" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#064e3b">A3_HR_BETREIBER_GRFA · leaf</text>
+<g clip-path="url(#clip-A3_HR_BETREIBER_GRFA)">
+<text x="6180" y="260" font-family="Arial, sans-serif" font-size="12" fill="#064e3b">Hochrisiko-KI -&gt; Betreiberpflichten</text>
+<text x="6180" y="274" font-family="Arial, sans-serif" font-size="12" fill="#064e3b">anwenden (inkl. GRFA nach Art. 27).</text>
+</g>
+<text x="6180" y="334" font-family="Arial, sans-serif" font-size="9" fill="#64748b">EU AI Act (2024), Art. 26–27</text>
+<rect x="6168" y="392" width="340" height="124" rx="10" fill="#ecfdf5" stroke="#22c55e" stroke-width="1.6"/>
+<text x="6180" y="410" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#064e3b">A3_HR_BETREIBER_OHNE_GRFA · leaf</text>
+<g clip-path="url(#clip-A3_HR_BETREIBER_OHNE_GRFA)">
+<text x="6180" y="432" font-family="Arial, sans-serif" font-size="12" fill="#064e3b">Hochrisiko-KI -&gt; Betreiberpflichten</text>
+<text x="6180" y="446" font-family="Arial, sans-serif" font-size="12" fill="#064e3b">anwenden (GRFA nicht erforderlich –</text>
+<text x="6180" y="460" font-family="Arial, sans-serif" font-size="12" fill="#064e3b">Pflichtprüfung dokumentieren).</text>
+</g>
+<text x="6180" y="506" font-family="Arial, sans-serif" font-size="9" fill="#64748b">EU AI Act (2024), Art. 26–27</text>
+<rect x="6168" y="564" width="340" height="124" rx="10" fill="#ffffff" stroke="#94a3b8" stroke-width="1.6"/>
+<text x="6180" y="582" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">A3_BETREIBER · question</text>
+<g clip-path="url(#clip-A3_BETREIBER)">
+<text x="6180" y="604" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Keiner der vorherigen</text>
+<text x="6180" y="618" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Anhang-III/Art.-6-Trigger hat eindeutig</text>
+<text x="6180" y="632" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">gegriffen: Liegt trotzdem ein</text>
+<text x="6180" y="646" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Hochrisiko-Fall vor (z. B. andere</text>
+<text x="6180" y="660" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Anhang-III-Bereiche), der dokumentiert</text>
+<text x="6180" y="674" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">werden muss?</text>
+</g>
+<text x="6180" y="678" font-family="Arial, sans-serif" font-size="9" fill="#64748b">EU AI Act (2024), Art. 6</text>
+<rect x="6168" y="48" width="340" height="124" rx="10" fill="#ffffff" stroke="#94a3b8" stroke-width="1.6"/>
+<text x="6180" y="66" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">A3_HR_ANHANG_III_DOMAENE_BETREIBER_KRIT_INFRA · question</text>
+<g clip-path="url(#clip-A3_HR_ANHANG_III_DOMAENE_BETREIBER_KRIT_INFRA)">
+<text x="6180" y="88" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Trifft Anhang-III-Bereich „Kritische</text>
+<text x="6180" y="102" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Infrastruktur“ zu?</text>
+</g>
+<text x="6180" y="162" font-family="Arial, sans-serif" font-size="9" fill="#64748b">EU AI Act (2024), Anhang III</text>
+<rect x="6168" y="908" width="340" height="124" rx="10" fill="#eff6ff" stroke="#38bdf8" stroke-width="1.6"/>
+<text x="6180" y="926" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">D1_ART16_Y_B4 · leaf</text>
+<g clip-path="url(#clip-D1_ART16_Y_B4)">
+<text x="6180" y="948" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Art. 16 anwendbar -&gt; vereinfachter</text>
+<text x="6180" y="962" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">IKT-RMF (Minimalanforderungen) umsetzen.</text>
+</g>
+<text x="6180" y="1022" font-family="Arial, sans-serif" font-size="9" fill="#64748b">DORA (2022), Art. 16</text>
+<rect x="6168" y="736" width="340" height="124" rx="10" fill="#eff6ff" stroke="#38bdf8" stroke-width="1.6"/>
+<text x="6180" y="754" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">D1_ART16_N_B4 · leaf</text>
+<g clip-path="url(#clip-D1_ART16_N_B4)">
+<text x="6180" y="776" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Art. 16 nicht anwendbar -&gt; abgestufte</text>
+<text x="6180" y="790" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Basisanforderungen.</text>
+</g>
+<text x="6180" y="850" font-family="Arial, sans-serif" font-size="9" fill="#64748b">DORA (2022), Art. 4 i. V. m. Art. 5–15</text>
+<rect x="6168" y="1080" width="340" height="124" rx="10" fill="#ffffff" stroke="#94a3b8" stroke-width="1.6"/>
+<text x="6180" y="1098" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">A4_TRANSPARENZ_ANWENDBAR · question</text>
+<g clip-path="url(#clip-A4_TRANSPARENZ_ANWENDBAR)">
+<text x="6180" y="1120" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Interagiert das System direkt mit</text>
+<text x="6180" y="1134" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">natürlichen Personen oder erzeugt es</text>
+<text x="6180" y="1148" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">synthetische Inhalte</text>
+<text x="6180" y="1162" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">(Text/Bild/Audio/Video), die</text>
+<text x="6180" y="1176" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">gekennzeichnet werden müssen?</text>
+</g>
+<text x="6180" y="1194" font-family="Arial, sans-serif" font-size="9" fill="#64748b">EU AI Act (2024), Art. 50</text>
+<rect x="6678" y="48" width="340" height="124" rx="10" fill="#ffffff" stroke="#94a3b8" stroke-width="1.6"/>
+<text x="6690" y="66" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">A3_HR_ANHANG_III_DOMAENE_BETREIBER_BILDUNG_ARBEIT_DIENSTE · question</text>
+<g clip-path="url(#clip-A3_HR_ANHANG_III_DOMAENE_BETREIBER_BILDUNG_ARBEIT_DIENSTE)">
+<text x="6690" y="88" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Trifft einer der Anhang-III-Bereiche zu:</text>
+<text x="6690" y="102" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Bildung,</text>
+<text x="6690" y="116" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Beschäftigung/Personalmanagement oder</text>
+<text x="6690" y="130" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Zugang zu wesentlichen Dienstleistungen?</text>
+</g>
+<text x="6690" y="162" font-family="Arial, sans-serif" font-size="9" fill="#64748b">EU AI Act (2024), Anhang III</text>
+<rect x="6678" y="220" width="340" height="124" rx="10" fill="#eff6ff" stroke="#38bdf8" stroke-width="1.6"/>
+<text x="6690" y="238" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">B1 · question</text>
+<g clip-path="url(#clip-B1)">
+<text x="6690" y="260" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Unterstützt das KI-System eine kritische</text>
+<text x="6690" y="274" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">oder wichtige Funktion?</text>
+</g>
+<text x="6690" y="334" font-family="Arial, sans-serif" font-size="9" fill="#64748b">DORA (2022), Art. 3</text>
+<rect x="6678" y="392" width="340" height="124" rx="10" fill="#ecfdf5" stroke="#22c55e" stroke-width="1.6"/>
+<text x="6690" y="410" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#064e3b">A4_KEIN_HR_MIT_TRANSPARENZPFLICHTEN · leaf</text>
+<g clip-path="url(#clip-A4_KEIN_HR_MIT_TRANSPARENZPFLICHTEN)">
+<text x="6690" y="432" font-family="Arial, sans-serif" font-size="12" fill="#064e3b">Kein Hochrisiko -&gt;</text>
+<text x="6690" y="446" font-family="Arial, sans-serif" font-size="12" fill="#064e3b">Art.-50-Transparenzpflichten gelten.</text>
+</g>
+<text x="6690" y="506" font-family="Arial, sans-serif" font-size="9" fill="#64748b">EU AI Act (2024), Art. 50</text>
+<rect x="6678" y="564" width="340" height="124" rx="10" fill="#ecfdf5" stroke="#22c55e" stroke-width="1.6"/>
+<text x="6690" y="582" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#064e3b">A4_KEIN_HR_NUR_GOVERNANCE_BASIS · leaf</text>
+<g clip-path="url(#clip-A4_KEIN_HR_NUR_GOVERNANCE_BASIS)">
+<text x="6690" y="604" font-family="Arial, sans-serif" font-size="12" fill="#064e3b">Kein Hochrisiko -&gt; keine Art.-50-Trigger</text>
+<text x="6690" y="618" font-family="Arial, sans-serif" font-size="12" fill="#064e3b">-&gt; nur Kenntnis-Pflichten sicherstellen.</text>
+</g>
+<text x="6690" y="678" font-family="Arial, sans-serif" font-size="9" fill="#64748b">EU AI Act (2024), Art. 4</text>
+<rect x="7188" y="48" width="340" height="124" rx="10" fill="#eff6ff" stroke="#38bdf8" stroke-width="1.6"/>
+<text x="7200" y="66" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">B1_SCOPE_NACHWEIS · question</text>
+<g clip-path="url(#clip-B1_SCOPE_NACHWEIS)">
+<text x="7200" y="88" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Ist die Einstufung als kritische oder</text>
+<text x="7200" y="102" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">wichtige Funktion nachvollziehbar</text>
+<text x="7200" y="116" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">dokumentiert und freigegeben?</text>
+</g>
+<text x="7200" y="162" font-family="Arial, sans-serif" font-size="9" fill="#64748b">DORA (2022), Art. 8</text>
+<rect x="7188" y="220" width="340" height="124" rx="10" fill="#eff6ff" stroke="#38bdf8" stroke-width="1.6"/>
+<text x="7200" y="238" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">B3 · question</text>
+<g clip-path="url(#clip-B3)">
+<text x="7200" y="260" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Wird KI nur unterstützend eingesetzt?</text>
+</g>
+<text x="7200" y="334" font-family="Arial, sans-serif" font-size="9" fill="#64748b">DORA (2022), Art. 6</text>
+<rect x="7698" y="48" width="340" height="124" rx="10" fill="#eff6ff" stroke="#38bdf8" stroke-width="1.6"/>
+<text x="7710" y="66" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">B2 · question</text>
+<g clip-path="url(#clip-B2)">
+<text x="7710" y="88" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Hat das KI-System direkten Einfluss auf</text>
+<text x="7710" y="102" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">operative oder finanzielle</text>
+<text x="7710" y="116" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Entscheidungen?</text>
+</g>
+<text x="7710" y="162" font-family="Arial, sans-serif" font-size="9" fill="#64748b">DORA (2022), Art. 6</text>
+<rect x="7698" y="220" width="340" height="124" rx="10" fill="#fff7ed" stroke="#f97316" stroke-width="1.6"/>
+<text x="7710" y="238" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#7c2d12">W_DORA_KRITISCHE_FUNKTION_SCOPE_UEBERPRUEFUNG · leaf</text>
+<g clip-path="url(#clip-W_DORA_KRITISCHE_FUNKTION_SCOPE_UEBERPRUEFUNG)">
+<text x="7710" y="260" font-family="Arial, sans-serif" font-size="12" fill="#7c2d12">Nachweis für kritische/wichtige Funktion</text>
+<text x="7710" y="274" font-family="Arial, sans-serif" font-size="12" fill="#7c2d12">fehlt -&gt; Dokumentation/Freigabe</text>
+<text x="7710" y="288" font-family="Arial, sans-serif" font-size="12" fill="#7c2d12">nachholen.</text>
+</g>
+<text x="7710" y="334" font-family="Arial, sans-serif" font-size="9" fill="#64748b">DORA (2022), Art. 8</text>
+<rect x="7698" y="392" width="340" height="124" rx="10" fill="#eff6ff" stroke="#38bdf8" stroke-width="1.6"/>
+<text x="7710" y="410" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">B3_N · leaf</text>
+<g clip-path="url(#clip-B3_N)">
+<text x="7710" y="432" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Nicht-kritische KI-Unterstützung -&gt;</text>
+<text x="7710" y="446" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">DORA-Basis nach Kritikalität.</text>
+</g>
+<text x="7710" y="506" font-family="Arial, sans-serif" font-size="9" fill="#64748b">DORA (2022), Art. 6</text>
+<rect x="7698" y="564" width="340" height="124" rx="10" fill="#eff6ff" stroke="#38bdf8" stroke-width="1.6"/>
+<text x="7710" y="582" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">B3_R · leaf</text>
+<g clip-path="url(#clip-B3_R)">
+<text x="7710" y="604" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Kritikalität unklar -&gt; konservative</text>
+<text x="7710" y="618" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Einstufung und Dokumentation.</text>
+</g>
+<text x="7710" y="678" font-family="Arial, sans-serif" font-size="9" fill="#64748b">DORA (2022), Art. 8</text>
+<rect x="8208" y="220" width="340" height="124" rx="10" fill="#eff6ff" stroke="#38bdf8" stroke-width="1.6"/>
+<text x="8220" y="238" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">B2_H · leaf</text>
+<g clip-path="url(#clip-B2_H)">
+<text x="8220" y="260" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Hohe Kritikalität -&gt; DORA-Basis +</text>
+<text x="8220" y="274" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Resilienztests.</text>
+</g>
+<text x="8220" y="334" font-family="Arial, sans-serif" font-size="9" fill="#64748b">DORA (2022), Art. 26</text>
+<rect x="8208" y="48" width="340" height="124" rx="10" fill="#eff6ff" stroke="#38bdf8" stroke-width="1.6"/>
+<text x="8220" y="66" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">B2_EFFECTIVE · question</text>
+<g clip-path="url(#clip-B2_EFFECTIVE)">
+<text x="8220" y="88" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Werden KI-Empfehlungen in der Praxis</text>
+<text x="8220" y="102" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">überwiegend ohne substanzielle Prüfung</text>
+<text x="8220" y="116" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">übernommen oder automatisch umgesetzt?</text>
+</g>
+<text x="8220" y="162" font-family="Arial, sans-serif" font-size="9" fill="#64748b">DORA (2022), Art. 6</text>
+<rect x="8208" y="392" width="340" height="124" rx="10" fill="#eff6ff" stroke="#38bdf8" stroke-width="1.6"/>
+<text x="8220" y="410" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">B4 · question</text>
+<g clip-path="url(#clip-B4)">
+<text x="8220" y="432" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Wird das System (ganz oder teilweise)</text>
+<text x="8220" y="446" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">von einem externen IKT-Dienstleister</text>
+<text x="8220" y="460" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">bereitgestellt?</text>
+</g>
+<text x="8220" y="506" font-family="Arial, sans-serif" font-size="9" fill="#64748b">DORA (2022), Art. 28</text>
+<rect x="8208" y="564" width="340" height="124" rx="10" fill="#eff6ff" stroke="#38bdf8" stroke-width="1.6"/>
+<text x="8220" y="582" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">T1_TLPT_APPLIES · question</text>
+<g clip-path="url(#clip-T1_TLPT_APPLIES)">
+<text x="8220" y="604" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Unterliegt Ihr Unternehmen</text>
+<text x="8220" y="618" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">fortgeschrittenen Resilienztests (TLPT)</text>
+<text x="8220" y="632" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">nach DORA (Art. 26–27) bzw. einer</text>
+<text x="8220" y="646" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">entsprechenden behördlichen</text>
+<text x="8220" y="660" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">TLPT-Anordnung?</text>
+</g>
+<text x="8220" y="678" font-family="Arial, sans-serif" font-size="9" fill="#64748b">DORA (2022), Art. 26–27</text>
+<rect x="8718" y="48" width="340" height="124" rx="10" fill="#eff6ff" stroke="#38bdf8" stroke-width="1.6"/>
+<text x="8730" y="66" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">B2_COMPLIANCE · question</text>
+<g clip-path="url(#clip-B2_COMPLIANCE)">
+<text x="8730" y="88" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Ist der Einsatz</text>
+<text x="8730" y="102" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">compliance-/risiko-/prüfungsnah oder</text>
+<text x="8730" y="116" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">regulatorisch entscheidend?</text>
+</g>
+<text x="8730" y="162" font-family="Arial, sans-serif" font-size="9" fill="#64748b">DORA (2022), Art. 6</text>
+<rect x="8718" y="220" width="340" height="124" rx="10" fill="#eff6ff" stroke="#38bdf8" stroke-width="1.6"/>
+<text x="8730" y="238" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">B4_GENAI_LLM_SERVICE · question</text>
+<g clip-path="url(#clip-B4_GENAI_LLM_SERVICE)">
+<text x="8730" y="260" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Wird ein Dienst für generative</text>
+<text x="8730" y="274" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">KI/LLM/Grundlagenmodell (API) genutzt</text>
+<text x="8730" y="288" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">oder ein vergleichbarer externer Dienst</text>
+<text x="8730" y="302" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">für generative KI?</text>
+</g>
+<text x="8730" y="334" font-family="Arial, sans-serif" font-size="9" fill="#64748b">DORA (2022), Art. 9 / Art. 28–30</text>
+<rect x="8718" y="392" width="340" height="124" rx="10" fill="#eff6ff" stroke="#38bdf8" stroke-width="1.6"/>
+<text x="8730" y="410" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">B6 · leaf</text>
+<g clip-path="url(#clip-B6)">
+<text x="8730" y="432" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Kein externer IKT-Dienstleister -&gt;</text>
+<text x="8730" y="446" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">interne Verantwortung (DORA-Basis).</text>
+</g>
+<text x="8730" y="506" font-family="Arial, sans-serif" font-size="9" fill="#64748b">DORA (2022), Art. 6</text>
+<rect x="8718" y="564" width="340" height="124" rx="10" fill="#eff6ff" stroke="#38bdf8" stroke-width="1.6"/>
+<text x="8730" y="582" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">T1_TLPT · leaf</text>
+<g clip-path="url(#clip-T1_TLPT)">
+<text x="8730" y="604" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">TLPT erforderlich -&gt; TLPT-Pflichten</text>
+<text x="8730" y="618" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">anwenden (zusätzlich zum Testprogramm).</text>
+</g>
+<text x="8730" y="678" font-family="Arial, sans-serif" font-size="9" fill="#64748b">DORA (2022), Art. 26–27</text>
+<rect x="9228" y="220" width="340" height="124" rx="10" fill="#eff6ff" stroke="#38bdf8" stroke-width="1.6"/>
+<text x="9240" y="238" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">B2_M_ENH · leaf</text>
+<g clip-path="url(#clip-B2_M_ENH)">
+<text x="9240" y="260" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Mittlere Kritikalität -&gt; verstärkte</text>
+<text x="9240" y="274" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">DORA-Basis.</text>
+</g>
+<text x="9240" y="334" font-family="Arial, sans-serif" font-size="9" fill="#64748b">DORA (2022), Art. 6</text>
+<rect x="9228" y="48" width="340" height="124" rx="10" fill="#eff6ff" stroke="#38bdf8" stroke-width="1.6"/>
+<text x="9240" y="66" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">B2_M · leaf</text>
+<g clip-path="url(#clip-B2_M)">
+<text x="9240" y="88" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Mittlere Kritikalität -&gt; DORA-Basis nach</text>
+<text x="9240" y="102" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Kritikalität.</text>
+</g>
+<text x="9240" y="162" font-family="Arial, sans-serif" font-size="9" fill="#64748b">DORA (2022), Art. 6</text>
+<rect x="9228" y="564" width="340" height="124" rx="10" fill="#fff7ed" stroke="#f97316" stroke-width="1.6"/>
+<text x="9240" y="582" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#7c2d12">W_DORA_GENAI_LLM_KONTROLLEN · leaf</text>
+<g clip-path="url(#clip-W_DORA_GENAI_LLM_KONTROLLEN)">
+<text x="9240" y="604" font-family="Arial, sans-serif" font-size="12" fill="#7c2d12">Dienst für generative KI/LLM genutzt -&gt;</text>
+<text x="9240" y="618" font-family="Arial, sans-serif" font-size="12" fill="#7c2d12">spezifische Kontrollen für generative KI</text>
+<text x="9240" y="632" font-family="Arial, sans-serif" font-size="12" fill="#7c2d12">prüfen/umsetzen.</text>
+</g>
+<text x="9240" y="678" font-family="Arial, sans-serif" font-size="9" fill="#64748b">DORA (2022), Art. 9 / Art. 28–30</text>
+<rect x="9228" y="392" width="340" height="124" rx="10" fill="#eff6ff" stroke="#38bdf8" stroke-width="1.6"/>
+<text x="9240" y="410" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">B5 · question</text>
+<g clip-path="url(#clip-B5)">
+<text x="9240" y="432" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Würde ein Ausfall des Dienstleisters</text>
+<text x="9240" y="446" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">kurzfristig eine kritische/wichtige</text>
+<text x="9240" y="460" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Funktion oder wesentliche regulatorische</text>
+<text x="9240" y="474" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Pflichten beeinträchtigen?</text>
+</g>
+<text x="9240" y="506" font-family="Arial, sans-serif" font-size="9" fill="#64748b">DORA (2022), Art. 28–29</text>
+<rect x="9228" y="736" width="340" height="124" rx="10" fill="#eff6ff" stroke="#38bdf8" stroke-width="1.6"/>
+<text x="9240" y="754" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">B7 · question</text>
+<g clip-path="url(#clip-B7)">
+<text x="9240" y="776" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Werden produktive Kunden-, Transaktions-</text>
+<text x="9240" y="790" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">oder andere sensible Daten an externe</text>
+<text x="9240" y="804" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">KI-Dienste übermittelt?</text>
+</g>
+<text x="9240" y="850" font-family="Arial, sans-serif" font-size="9" fill="#64748b">DORA (2022), Art. 9</text>
+<rect x="9738" y="220" width="340" height="124" rx="10" fill="#eff6ff" stroke="#38bdf8" stroke-width="1.6"/>
+<text x="9750" y="238" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">B5_SUBSTITUIERBARKEIT · question</text>
+<g clip-path="url(#clip-B5_SUBSTITUIERBARKEIT)">
+<text x="9750" y="260" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Gibt es eine realistische</text>
+<text x="9750" y="274" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Ausstiegs-/Substitutionsmöglichkeit</text>
+<text x="9750" y="288" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">(vertraglich + technisch) innerhalb</text>
+<text x="9750" y="302" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">einer definierten Frist?</text>
+</g>
+<text x="9750" y="334" font-family="Arial, sans-serif" font-size="9" fill="#64748b">DORA (2022), Art. 28–30</text>
+<rect x="9738" y="48" width="340" height="124" rx="10" fill="#eff6ff" stroke="#38bdf8" stroke-width="1.6"/>
+<text x="9750" y="66" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">B5_KONZENTRATION · question</text>
+<g clip-path="url(#clip-B5_KONZENTRATION)">
+<text x="9750" y="88" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Besteht ein Konzentrationsrisiko</text>
+<text x="9750" y="102" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">(gleicher Anbieter für mehrere kritische</text>
+<text x="9750" y="116" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Dienste/Regionen/BCM-Szenarien)?</text>
+</g>
+<text x="9750" y="162" font-family="Arial, sans-serif" font-size="9" fill="#64748b">DORA (2022), Art. 28–29</text>
+<rect x="9738" y="564" width="340" height="124" rx="10" fill="#eff6ff" stroke="#38bdf8" stroke-width="1.6"/>
+<text x="9750" y="582" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">B7_S · leaf</text>
+<g clip-path="url(#clip-B7_S)">
+<text x="9750" y="604" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Sensible Daten -&gt; Schutzmaßnahmen für</text>
+<text x="9750" y="618" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">externe KI.</text>
+</g>
+<text x="9750" y="678" font-family="Arial, sans-serif" font-size="9" fill="#64748b">DORA (2022), Art. 9</text>
+<rect x="9738" y="392" width="340" height="124" rx="10" fill="#eff6ff" stroke="#38bdf8" stroke-width="1.6"/>
+<text x="9750" y="410" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">B7_N · leaf</text>
+<g clip-path="url(#clip-B7_N)">
+<text x="9750" y="432" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Keine sensiblen Daten -&gt; Basismaßnahmen</text>
+<text x="9750" y="446" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">ausreichend.</text>
+</g>
+<text x="9750" y="506" font-family="Arial, sans-serif" font-size="9" fill="#64748b">DORA (2022), Art. 6</text>
+<rect x="10248" y="220" width="340" height="124" rx="10" fill="#eff6ff" stroke="#38bdf8" stroke-width="1.6"/>
+<text x="10260" y="238" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">B5_C · leaf</text>
+<g clip-path="url(#clip-B5_C)">
+<text x="10260" y="260" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Pot. kritischer IKT-Drittanbieter -&gt;</text>
+<text x="10260" y="274" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">erweiterte Drittanbieterpflichten.</text>
+</g>
+<text x="10260" y="334" font-family="Arial, sans-serif" font-size="9" fill="#64748b">DORA (2022), Art. 28</text>
+<rect x="10248" y="48" width="340" height="124" rx="10" fill="#eff6ff" stroke="#38bdf8" stroke-width="1.6"/>
+<text x="10260" y="66" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">B5_N · leaf</text>
+<g clip-path="url(#clip-B5_N)">
+<text x="10260" y="88" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Nicht-kritischer IKT-Drittanbieter -&gt;</text>
+<text x="10260" y="102" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Standardpflichten.</text>
+</g>
+<text x="10260" y="162" font-family="Arial, sans-serif" font-size="9" fill="#64748b">DORA (2022), Art. 28</text>
+<rect x="10248" y="392" width="340" height="124" rx="10" fill="#eff6ff" stroke="#38bdf8" stroke-width="1.6"/>
+<text x="10260" y="410" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">B7_RUECKFALL · question</text>
+<g clip-path="url(#clip-B7_RUECKFALL)">
+<text x="10260" y="432" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Gibt es ein getestetes Ausweichverfahren</text>
+<text x="10260" y="446" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">inkl. RTO/RPO, Rollen, Betriebshandbuch</text>
+<text x="10260" y="460" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">und Entscheidungskriterien?</text>
+</g>
+<text x="10260" y="506" font-family="Arial, sans-serif" font-size="9" fill="#64748b">DORA (2022), Art. 11–12</text>
+<rect x="10758" y="48" width="340" height="124" rx="10" fill="#eff6ff" stroke="#38bdf8" stroke-width="1.6"/>
+<text x="10770" y="66" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">B5_KRITIKALITAETS_UEBERPRUEFUNG · question</text>
+<g clip-path="url(#clip-B5_KRITIKALITAETS_UEBERPRUEFUNG)">
+<text x="10770" y="88" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Ist die Einstufung dokumentiert und</text>
+<text x="10770" y="102" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">durch das Compliance-Team formal</text>
+<text x="10770" y="116" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">freigegeben?</text>
+</g>
+<text x="10770" y="162" font-family="Arial, sans-serif" font-size="9" fill="#64748b">DORA (2022), Art. 28–30</text>
+<rect x="10758" y="392" width="340" height="124" rx="10" fill="#eff6ff" stroke="#38bdf8" stroke-width="1.6"/>
+<text x="10770" y="410" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">B7_RUECKFALL_OK · leaf</text>
+<g clip-path="url(#clip-B7_RUECKFALL_OK)">
+<text x="10770" y="432" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Ausweichverfahren vorhanden -&gt; BCM</text>
+<text x="10770" y="446" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Anforderungen erfüllt.</text>
+</g>
+<text x="10770" y="506" font-family="Arial, sans-serif" font-size="9" fill="#64748b">DORA (2022), Art. 11–12</text>
+<rect x="10758" y="220" width="340" height="124" rx="10" fill="#eff6ff" stroke="#38bdf8" stroke-width="1.6"/>
+<text x="10770" y="238" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">B7_RUECKFALL_LUECKE · leaf</text>
+<g clip-path="url(#clip-B7_RUECKFALL_LUECKE)">
+<text x="10770" y="260" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Ausweichverfahren fehlt -&gt; BCM-Mapping &amp;</text>
+<text x="10770" y="274" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Test erforderlich.</text>
+</g>
+<text x="10770" y="334" font-family="Arial, sans-serif" font-size="9" fill="#64748b">DORA (2022), Art. 11–12</text>
+<rect x="11268" y="48" width="340" height="124" rx="10" fill="#fff7ed" stroke="#f97316" stroke-width="1.6"/>
+<text x="11280" y="66" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#7c2d12">W_DORA_DRITTANBIETER_UEBERPRUEFUNG · leaf</text>
+<g clip-path="url(#clip-W_DORA_DRITTANBIETER_UEBERPRUEFUNG)">
+<text x="11280" y="88" font-family="Arial, sans-serif" font-size="12" fill="#7c2d12">Drittanbieter-Kritikalität:</text>
+<text x="11280" y="102" font-family="Arial, sans-serif" font-size="12" fill="#7c2d12">Review/Dokumentation erforderlich</text>
+</g>
+<text x="11280" y="162" font-family="Arial, sans-serif" font-size="9" fill="#64748b">DORA (2022), Art. 28–30</text>
+<rect x="11268" y="220" width="340" height="124" rx="10" fill="#eff6ff" stroke="#38bdf8" stroke-width="1.6"/>
+<text x="11280" y="238" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">B8 · question</text>
+<g clip-path="url(#clip-B8)">
+<text x="11280" y="260" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Verändert sich das Modell im Betrieb?</text>
+</g>
+<text x="11280" y="334" font-family="Arial, sans-serif" font-size="9" fill="#64748b">DORA (2022), Art. 9</text>
+<rect x="11778" y="48" width="340" height="124" rx="10" fill="#eff6ff" stroke="#38bdf8" stroke-width="1.6"/>
+<text x="11790" y="66" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">B8_D · leaf</text>
+<g clip-path="url(#clip-B8_D)">
+<text x="11790" y="88" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Dynamisches Modell -&gt;</text>
+<text x="11790" y="102" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Überwachung/Änderungsmanagement +</text>
+<text x="11790" y="116" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Vorfallanagement.</text>
+</g>
+<text x="11790" y="162" font-family="Arial, sans-serif" font-size="9" fill="#64748b">DORA (2022), Art. 17</text>
+<rect x="11778" y="220" width="340" height="124" rx="10" fill="#eff6ff" stroke="#38bdf8" stroke-width="1.6"/>
+<text x="11790" y="238" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">B8_S · leaf</text>
+<g clip-path="url(#clip-B8_S)">
+<text x="11790" y="260" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Statisches Modell -&gt; Basismaßnahmen +</text>
+<text x="11790" y="274" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Vorfallanagement.</text>
+</g>
+<text x="11790" y="334" font-family="Arial, sans-serif" font-size="9" fill="#64748b">DORA (2022), Art. 17</text>
+<rect x="12288" y="48" width="340" height="124" rx="10" fill="#eff6ff" stroke="#38bdf8" stroke-width="1.6"/>
+<text x="12300" y="66" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f172a">C1_KOMMUNIKATION_BENOETIGT · question</text>
+<g clip-path="url(#clip-C1_KOMMUNIKATION_BENOETIGT)">
+<text x="12300" y="88" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Hat ein Ausfall/Vorfall potenziell</text>
+<text x="12300" y="102" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Kunden-, Markt- oder</text>
+<text x="12300" y="116" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Reputationsauswirkungen (sodass externe</text>
+<text x="12300" y="130" font-family="Arial, sans-serif" font-size="12" fill="#0f172a">Kommunikation erforderlich sein kann)?</text>
+</g>
+<text x="12300" y="162" font-family="Arial, sans-serif" font-size="9" fill="#64748b">DORA (2022), Art. 14 i. V. m. Art. 17</text>
+<rect x="12798" y="48" width="340" height="124" rx="10" fill="#fff7ed" stroke="#f97316" stroke-width="1.6"/>
+<text x="12810" y="66" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#7c2d12">W_DORA_KOMMUNIKATION_ERFORDERLICH · leaf</text>
+<g clip-path="url(#clip-W_DORA_KOMMUNIKATION_ERFORDERLICH)">
+<text x="12810" y="88" font-family="Arial, sans-serif" font-size="12" fill="#7c2d12">Kommunikationspläne/-strategie nach DORA</text>
+<text x="12810" y="102" font-family="Arial, sans-serif" font-size="12" fill="#7c2d12">Art. 14 erforderlich.</text>
+</g>
+<text x="12810" y="162" font-family="Arial, sans-serif" font-size="9" fill="#64748b">DORA (2022), Art. 14</text>
+</svg>
